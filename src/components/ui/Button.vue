@@ -5,6 +5,10 @@
  * @author Nelson Valero
  * @since v1.0.0
  */
+
+defineOptions({
+  name: 'UiButton'
+})
 interface Props {
   variant?: 'primary' | 'secondary' | 'outline' | 'ghost'
   size?: 'sm' | 'md' | 'lg'
@@ -12,7 +16,7 @@ interface Props {
   type?: 'button' | 'submit' | 'reset'
 }
 
-const props = withDefaults(defineProps<Props>(), {
+const { variant, size, disabled, type } = withDefaults(defineProps<Props>(), {
   variant: 'primary',
   size: 'md',
   disabled: false,

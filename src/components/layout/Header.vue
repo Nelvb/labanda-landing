@@ -6,6 +6,10 @@
  * @author Nelson Valero
  * @since v1.0.0
  */
+
+defineOptions({
+  name: 'AppHeader'
+})
 import { ref, onMounted, onUnmounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 

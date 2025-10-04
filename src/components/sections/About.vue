@@ -6,6 +6,10 @@
  * @author Nelson Valero
  * @since v1.0.0
  */
+
+defineOptions({
+  name: 'CompanyAbout'
+})
 import { ref, onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { Clock, Target, Lightbulb } from 'lucide-vue-next'

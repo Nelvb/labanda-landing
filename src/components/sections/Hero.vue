@@ -6,6 +6,10 @@
  * @author Nelson Valero
  * @since v1.0.0
  */
+
+defineOptions({
+  name: 'HomeHero'
+})
 import { useI18n } from 'vue-i18n'
 import Button from '@/components/ui/Button.vue'
 

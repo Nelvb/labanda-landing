@@ -8,6 +8,10 @@
  * @since v1.0.0
  */
 
+defineOptions({
+  name: 'CompanyProjects'
+})
+
 import { useI18n } from 'vue-i18n'
 import ProjectCarousel from './carousel/ProjectCarousel.vue'
 

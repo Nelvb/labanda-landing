@@ -37,7 +37,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section id="apropos" ref="aboutSection" class="py-20 bg-white">
+  <section id="apropos" ref="aboutSection" class="py-12 md:py-16 bg-white">
     <div class="container mx-auto px-6">
       
       <!-- Título principal -->

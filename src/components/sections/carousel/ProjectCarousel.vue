@@ -79,26 +79,26 @@ const swiperOptions = {
             <div class="absolute inset-0 bg-gradient-to-b lg:bg-gradient-to-r from-black/40 via-black/20 to-transparent lg:to-black/60" />
           </div>
 
-          <!-- PROJECT INFO -->
-          <!-- Mobile: 50% altura SIN scroll, Desktop: 40% ancho -->
+<!-- PROJECT INFO -->
+          <!-- Mobile/Tablet: textos centrados, Desktop: alineación izquierda -->
           <div class="relative w-full lg:w-[40%] h-1/2 lg:h-full bg-white overflow-hidden">
             <div class="flex items-start lg:items-center justify-center p-4 lg:p-12 h-full">
               <div class="max-w-lg w-full">
                 
                 <!-- Category Badge -->
-                <div class="inline-block mb-2 lg:mb-4">
-                  <span class="px-3 py-1 lg:px-4 lg:py-2 bg-[#FF6B35]/10 text-[#FF6B35] text-xs lg:text-sm font-semibold rounded-full uppercase tracking-wide">
+                <div class="text-center lg:text-left mb-2 lg:mb-4">
+                  <span class="inline-block px-3 py-1 lg:px-4 lg:py-2 bg-[#FF6B35]/10 text-[#FF6B35] text-xs lg:text-sm font-semibold rounded-full uppercase tracking-wide">
                     {{ locale === 'fr' ? project.category.fr : project.category.en }}
                   </span>
                 </div>
 
                 <!-- Title -->
-                <h3 class="text-xl lg:text-3xl xl:text-4xl font-bold text-[#003366] mb-1 lg:mb-3">
+                <h3 class="text-xl lg:text-3xl xl:text-4xl font-bold text-[#003366] mb-1 lg:mb-3 text-center lg:text-left">
                   {{ locale === 'fr' ? project.title.fr : project.title.en }}
                 </h3>
 
                 <!-- Location & Year -->
-                <div class="flex flex-wrap items-center gap-2 lg:gap-4 text-gray-600 mb-2 lg:mb-6">
+                <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2 lg:gap-4 text-gray-600 mb-2 lg:mb-6">
                   <div class="flex items-center gap-1.5">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 lg:w-5 lg:h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -116,7 +116,7 @@ const swiperOptions = {
                 </div>
 
                 <!-- Description -->
-                <p class="text-xs lg:text-base text-gray-700 leading-tight lg:leading-relaxed mb-3 lg:mb-8 line-clamp-3 lg:line-clamp-none">
+                <p class="text-xs lg:text-base text-gray-700 leading-tight lg:leading-relaxed mb-3 lg:mb-8 line-clamp-3 lg:line-clamp-none text-center lg:text-left">
                   {{ locale === 'fr' ? project.description.fr : project.description.en }}
                 </p>
 

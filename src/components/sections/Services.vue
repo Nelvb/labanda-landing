@@ -126,7 +126,7 @@ const services = [
 </script>
 
 <template>
-  <section id="services" class="w-full">
+  <section id="services" class="w-full pb-12 md:pb-16">
     <!-- Section Header -->
     <div class="bg-white py-12 md:py-16 px-6 text-center">
       <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#003366] mb-4">

@@ -59,7 +59,7 @@ onMounted(() => {
 <template>
   <section
     ref="statsSection"
-    class="py-20 bg-gradient-to-br from-[#003366] via-[#0072CE] to-[#003366] text-white"
+    class="py-12 md:py-16 bg-gradient-to-br from-[#003366] via-[#0072CE] to-[#003366] text-white"
   >
     <div class="container mx-auto px-6">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-12">

@@ -1,0 +1,38 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "services": "Services",
+        "projects": "Projects",
+        "references": "References",
+        "contact": "Contact"
+    },
+    "hero": {
+        "title": "Excellence in Architecture & Infrastructure",
+        "subtitle": "Over 30 years of expertise serving strategic infrastructure development in Central Africa",
+        "cta_primary": "Discover our projects",
+        "cta_secondary": "Contact us"
+    },
+    "stats": {
+        "experience": "YEARS OF EXPERIENCE",
+        "projects": "COMPLETED PROJECTS",
+        "countries": "COUNTRIES OF OPERATION"
+    },
+    "about": {
+        "title": "About LABANDA",
+        "intro": "LABANDA Industrie Services supports governments, institutions and financing organizations in the implementation of major projects: cathedrals, urban planning, universities and sustainable infrastructure.",
+        "history_title": "Our History",
+        "history_text": "Founded with the vision of contributing to the sustainable development of Central Africa, LABANDA Industrie Services has established itself as a trusted partner for governmental and institutional projects.",
+        "mission_title": "Our Mission",
+        "mission_text": "Design and build sustainable infrastructure that transforms communities and supports economic growth in Central African nations through architectural excellence and innovation.",
+        "vision_title": "Our Vision",
+        "vision_text": "To be the leading provider of architecture and strategic infrastructure in Central Africa, recognized for our technical excellence and commitment to sustainable development.",
+        "presence_title": "Regional Presence",
+        "countries": {
+            "guinea": "Equatorial Guinea",
+            "cameroon": "Cameroon",
+            "congo": "Congo Brazzaville",
+            "chad": "Chad"
+        }
+    }
+}

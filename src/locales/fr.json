@@ -1,0 +1,38 @@
+{
+    "nav": {
+        "home": "Accueil",
+        "about": "À Propos",
+        "services": "Services",
+        "projects": "Projets",
+        "references": "Références",
+        "contact": "Contact"
+    },
+    "hero": {
+        "title": "Excellence en Architecture & Infrastructure",
+        "subtitle": "Plus de 30 ans d'expertise au service du développement des infrastructures stratégiques en Afrique Centrale",
+        "cta_primary": "Découvrir nos projets",
+        "cta_secondary": "Contactez-nous"
+    },
+    "stats": {
+        "experience": "ANNÉES D'EXPÉRIENCE",
+        "projects": "PROJETS RÉALISÉS",
+        "countries": "PAYS D'INTERVENTION"
+    },
+    "about": {
+        "title": "À Propos de LABANDA",
+        "intro": "LABANDA Industrie Services accompagne les gouvernements, institutions et organismes de financement dans la réalisation de projets d'envergure : cathédrales, plans d'urbanisme, universités et infrastructures durables.",
+        "history_title": "Notre Histoire",
+        "history_text": "Fondée avec la vision de contribuer au développement durable de l'Afrique Centrale, LABANDA Industrie Services s'est imposée comme un partenaire de confiance pour les projets d'envergure gouvernementale et institutionnelle.",
+        "mission_title": "Notre Mission",
+        "mission_text": "Concevoir et réaliser des infrastructures durables qui transforment les communautés et soutiennent la croissance économique des nations d'Afrique Centrale à travers l'excellence architecturale et l'innovation.",
+        "vision_title": "Notre Vision",
+        "vision_text": "Être le leader incontournable en architecture et infrastructures stratégiques en Afrique Centrale, reconnu pour notre excellence technique et notre engagement envers le développement durable.",
+        "presence_title": "Présence Régionale",
+        "countries": {
+            "guinea": "Guinée Équatoriale",
+            "cameroon": "Cameroun",
+            "congo": "Congo Brazzaville",
+            "chad": "Tchad"
+        }
+    }
+}

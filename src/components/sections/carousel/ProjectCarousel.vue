@@ -240,7 +240,9 @@ const swiperOptions = {
    ======================================== */
 
 @media (max-width: 1023px) {
-  :deep(.swiper-button-next),
+  :deep(.swiper-button-next) {
+    display: none;
+  }
   :deep(.swiper-button-prev) {
     display: none;
   }

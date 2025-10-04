@@ -125,11 +125,11 @@ onMounted(() => {
         <!-- Mapa África de fondo (versión simplificada) -->
 <div class="absolute inset-0 flex items-center justify-center opacity-20 pointer-events-none">
   <img 
-    src="https://res.cloudinary.com/dy1pkrd52/image/upload/v1759535689/simplified-political-map-africa-vector-4234592_nna9ip.webp" 
-    alt="" 
-    class="w-full max-w-md object-contain"
-    style="filter: sepia(100%) saturate(500%) hue-rotate(330deg) brightness(1.2);"
-  />
+  src="https://res.cloudinary.com/dy1pkrd52/image/upload/v1759589683/simplified-political-map-africa-vector-4234592_w2s69w.webp" 
+  alt="" 
+  class="w-full max-w-md object-contain"
+  style="filter: sepia(100%) saturate(500%) hue-rotate(330deg) brightness(1.2);"
+/>
 </div>
 
         <!-- Contenido -->

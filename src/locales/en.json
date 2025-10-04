@@ -34,5 +34,9 @@
             "congo": "Congo Brazzaville",
             "chad": "Chad"
         }
+    },
+    "services": {
+        "title": "Our Services",
+        "subtitle": "Complete solutions for your infrastructure projects in Central Africa"
     }
 }

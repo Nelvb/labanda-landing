@@ -9,6 +9,7 @@ import Header from './components/layout/Header.vue'
 import Hero from './components/sections/Hero.vue'
 import Stats from './components/sections/Stats.vue'
 import About from './components/sections/About.vue'
+import Services from './components/sections/Services.vue'
 
 </script>
 
@@ -18,6 +19,7 @@ import About from './components/sections/About.vue'
     <Hero />
     <Stats />
     <About />
+    <Services />
 
     <!-- Placeholder para secciones futuras -->
     <section id="apropos" class="min-h-screen bg-white flex items-center justify-center">

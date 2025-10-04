@@ -38,5 +38,9 @@
     "services": {
         "title": "Our Services",
         "subtitle": "Complete solutions for your infrastructure projects in Central Africa"
+    },
+    "projects": {
+        "title": "Our Projects",
+        "subtitle": "Portfolio of emblematic achievements in Central Africa and internationally"
     }
 }

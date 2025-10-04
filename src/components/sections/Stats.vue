@@ -8,10 +8,11 @@
  */
 import { ref, onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
+import type { StatItem } from '@/types'
 
 const { t } = useI18n()
 
-const stats = ref([
+const stats = ref<StatItem[]>([
   { value: 0, target: 30, label: t('stats.experience'), suffix: '+' },
   { value: 0, target: 50, label: t('stats.projects'), suffix: '+' },
   { value: 0, target: 5, label: t('stats.countries'), suffix: '' }
@@ -20,7 +21,7 @@ const stats = ref([
 const isVisible = ref(false)
 const statsSection = ref<HTMLElement | null>(null)
 
-const animateCounter = (stat: any) => {
+const animateCounter = (stat: StatItem) => {
   const increment = stat.target / 50
   const interval = setInterval(() => {
     if (stat.value < stat.target) {
@@ -45,7 +46,7 @@ onMounted(() => {
     { threshold: 0.3 }
   )
 
-  if (statsSection.value) {
+  if (statsSection.value && stats.value.length >= 3) {
     observer.observe(statsSection.value)
   }
 })
@@ -59,7 +60,7 @@ onMounted(() => {
     <div class="container mx-auto px-6">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
         <!-- Stat 1: Años -->
-        <div class="text-center">
+        <div v-if="stats.length >= 1" class="text-center">
           <div
             class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-[#FF6B35]/20 mb-6"
           >
@@ -78,15 +79,15 @@ onMounted(() => {
             </svg>
           </div>
           <div class="text-6xl font-bold mb-2">
-            {{ Math.ceil(stats[0].value) }}{{ stats[0].suffix }}
+            {{ Math.ceil(stats[0]?.value || 0) }}{{ stats[0]?.suffix || '' }}
           </div>
           <div class="text-xl font-medium text-gray-200">
-            {{ stats[0].label }}
+            {{ stats[0]?.label || '' }}
           </div>
         </div>
 
         <!-- Stat 2: Proyectos -->
-        <div class="text-center">
+        <div v-if="stats.length >= 2" class="text-center">
           <div
             class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-[#FF6B35]/20 mb-6"
           >
@@ -105,15 +106,15 @@ onMounted(() => {
             </svg>
           </div>
           <div class="text-6xl font-bold mb-2">
-            {{ Math.ceil(stats[1].value) }}{{ stats[1].suffix }}
+            {{ Math.ceil(stats[1]?.value || 0) }}{{ stats[1]?.suffix || '' }}
           </div>
           <div class="text-xl font-medium text-gray-200">
-            {{ stats[1].label }}
+            {{ stats[1]?.label || '' }}
           </div>
         </div>
 
         <!-- Stat 3: Países -->
-        <div class="text-center">
+        <div v-if="stats.length >= 3" class="text-center">
           <div
             class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-[#FF6B35]/20 mb-6"
           >
@@ -132,10 +133,10 @@ onMounted(() => {
             </svg>
           </div>
           <div class="text-6xl font-bold mb-2">
-            {{ Math.ceil(stats[2].value) }}{{ stats[2].suffix }}
+            {{ Math.ceil(stats[2]?.value || 0) }}{{ stats[2]?.suffix || '' }}
           </div>
           <div class="text-xl font-medium text-gray-200">
-            {{ stats[2].label }}
+            {{ stats[2]?.label || '' }}
           </div>
         </div>
       </div>

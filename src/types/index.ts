@@ -29,3 +29,10 @@ export interface FAQItem {
     answer: { fr: string; en: string }
     category: string
 }
+
+export interface StatItem {
+    value: number
+    target: number
+    label: string
+    suffix: string
+}

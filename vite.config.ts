@@ -14,6 +14,9 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
+  css: {
+    postcss: './postcss.config.js',  // CRÍTICO: Forzar procesamiento PostCSS
+  },
   build: {
     cssCodeSplit: false, // Evitar problemas con CSS de Swiper
     rollupOptions: {

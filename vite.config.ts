@@ -14,4 +14,15 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
+  build: {
+    cssCodeSplit: false, // Evitar problemas con CSS de Swiper
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['vue', 'vue-i18n'],
+          swiper: ['swiper']
+        }
+      }
+    }
+  }
 })

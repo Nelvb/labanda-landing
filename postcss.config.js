@@ -1,5 +1,4 @@
-// postcss.config.js
-export default {
+module.exports = {
   plugins: {
     'postcss-nesting': {},
     tailwindcss: {},

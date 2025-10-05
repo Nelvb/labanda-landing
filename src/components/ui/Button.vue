@@ -16,12 +16,12 @@ interface Props {
   type?: 'button' | 'submit' | 'reset'
 }
 
-const { variant, size, disabled, type } = withDefaults(defineProps<Props>(), {
-  variant: 'primary',
-  size: 'md',
-  disabled: false,
-  type: 'button'
-})
+const { 
+  variant = 'primary', 
+  size = 'md', 
+  disabled = false, 
+  type = 'button' 
+} = defineProps<Props>()
 
 const baseClasses = 'inline-flex items-center justify-center font-bold rounded-lg transition'
 

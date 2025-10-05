@@ -42,5 +42,49 @@
     "projects": {
         "title": "Our Projects",
         "subtitle": "Portfolio of emblematic achievements in Central Africa and internationally"
+    },
+    "contact": {
+        "title": "Contact Us",
+        "subtitle": "Start your project with our architecture and infrastructure experts",
+        "form": {
+            "name_label": "Full Name",
+            "name_placeholder": "John Smith",
+            "email_label": "Email",
+            "email_placeholder": "john.smith@example.com",
+            "company_label": "Company / Organization",
+            "company_placeholder": "Your company name",
+            "type_label": "Project Type",
+            "type_placeholder": "Select a type",
+            "type_options": {
+                "general": "General inquiry",
+                "quote": "Request for quote",
+                "investment": "Investment opportunities",
+                "partnership": "Strategic partnership"
+            },
+            "message_label": "Your Message",
+            "message_placeholder": "Describe your project in detail...",
+            "submit": "Send Message",
+            "sending": "Sending...",
+            "success_title": "Message sent successfully!",
+            "success_message": "We will contact you as soon as possible.",
+            "error_title": "Sending error",
+            "error_message": "Please try again or contact us directly."
+        },
+        "errors": {
+            "name": "Name must be at least 3 characters",
+            "email": "Please enter a valid email",
+            "type": "Please select a project type",
+            "message": "Message must be at least 20 characters"
+        },
+        "info": {
+            "address_title": "Location",
+            "address": "Malabo, Equatorial Guinea\nCentral Africa",
+            "phone_title": "Phone",
+            "phone": "+240 222 94 95 84",
+            "email_title": "Email",
+            "email": "info@labandaguinea.com",
+            "hours_title": "Hours",
+            "hours": "Monday - Friday: 8:00 AM - 6:00 PM\nSaturday: By appointment"
+        }
     }
 }

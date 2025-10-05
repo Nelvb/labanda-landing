@@ -76,14 +76,17 @@ const submitForm = async () => {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        access_key: 'de91e4d3-f9b9-4da4-ad6d-00848300f625',
-        name: formData.value.name,
-        email: formData.value.email,
-        company: formData.value.company || 'Non renseignée',
-        type: formData.value.type,
-        message: formData.value.message,
-        subject: `Nouveau contact LABANDA: ${formData.value.type}`
-      })
+ access_key: '79f5fb3e-6732-4466-9570-ebfed3bac5e0',
+
+  name: formData.value.name,
+  email: formData.value.email,
+  company: formData.value.company || 'Non renseignée',
+  type: formData.value.type,
+  message: formData.value.message,
+  subject: `Nouveau contact LABANDA: ${formData.value.type}`,
+  replyto: formData.value.email,
+  redirect: false // Importante: desactiva redirección automática
+})
     })
 
     const data = await response.json()

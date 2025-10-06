@@ -1,105 +1,122 @@
 <!--
  * LegalNoticeContent.es.vue
- * 
- * Contenido de Aviso Legal en español — LABANDA Industrie Services.
- * Cumple LSSI-CE y RGPD.
+ * Aviso Legal — LABANDA Industrie Services.
+ * Cumple Ley 1/2016 de Guinea Ecuatorial, LSSI-CE 34/2002 y Directiva 2000/31/CE.
+ * Redacción internacional para entornos europeos y africanos.
  * @author Nelson Valero
- * @since v1.0.0
- -->
+ * @since v1.2.0
+-->
 
 <template>
-  <section class="space-y-10 leading-relaxed">
+  <section class="space-y-12 leading-relaxed">
     <div class="bg-[#FF6B35]/10 border-l-4 border-[#FF6B35] p-5 rounded-md">
       <p class="text-sm text-gray-700"><strong>Última actualización:</strong> Octubre 2025</p>
       <p class="text-sm text-gray-700">
-        En cumplimiento de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la
-        Información (LSSI-CE).
+        En cumplimiento de la Ley 34/2002 (LSSI-CE), la Ley n.º 1/2016 de Guinea Ecuatorial y el
+        Reglamento (UE) 2016/679 (RGPD).
       </p>
     </div>
 
-    <!-- 1. Datos del titular -->
+    <!-- 1. TITULAR -->
     <section>
-      <h2 class="text-2xl font-semibold text-[#003366] mb-4">1. Datos del Titular</h2>
-      <p><strong>Denominación social:</strong> LABANDA Industrie Services</p>
-      <p><strong>Actividad:</strong> Servicios de arquitectura, construcción e infraestructuras</p>
-      <p><strong>Domicilio:</strong> Malabo, Guinea Ecuatorial</p>
-      <p><strong>Email:</strong> info@labandaguinea.com</p>
-      <p><strong>Teléfono:</strong> +240 222 94 95 84</p>
-      <p><strong>Web:</strong> https://labandaguinea.com</p>
-    </section>
-
-    <!-- 2. Objeto -->
-    <section>
-      <h2 class="text-2xl font-semibold text-[#003366] mb-4">2. Objeto del Sitio Web</h2>
-      <p>
-        Este sitio web tiene como objetivo presentar los servicios profesionales y proyectos de
-        LABANDA Industrie Services, así como facilitar el contacto entre clientes, socios y
-        colaboradores.
-      </p>
-    </section>
-
-    <!-- 3. Condiciones de uso -->
-    <section>
-      <h2 class="text-2xl font-semibold text-[#003366] mb-4">3. Condiciones de Uso</h2>
-      <ul class="list-disc pl-6 space-y-2">
-        <li>El acceso y uso del sitio web es gratuito y voluntario.</li>
-        <li>El usuario se compromete a utilizar el sitio conforme a la ley y la buena fe.</li>
+      <h2 class="text-2xl font-bold text-[#003366] mb-4">1. Datos del Titular</h2>
+      <ul class="space-y-1">
+        <li><strong>Nombre legal:</strong> LABANDA Industrie Services S.L.</li>
         <li>
-          Se prohíbe el uso del sitio con fines ilícitos o contrarios a los derechos de terceros.
+          <strong>Actividad:</strong> Arquitectura, urbanismo, construcción e infraestructuras
+          estratégicas.
         </li>
-        <li>LABANDA no se hace responsable del mal uso de la información contenida en el sitio.</li>
+        <li><strong>Domicilio:</strong> KM5, Edificio LEA1 – Malabo, Guinea Ecuatorial.</li>
+        <li>
+          <strong>Correo electrónico:</strong>
+          <a href="mailto:info@labandaguinea.com" class="text-[#FF6B35] hover:underline"
+            >info@labandaguinea.com</a
+          >
+        </li>
+        <li><strong>Teléfono:</strong> +240 555 559 529</li>
+        <li>
+          <strong>Dominio web:</strong>
+          <a href="https://labandaguinea.com" target="_blank" class="text-[#FF6B35] hover:underline"
+            >https://labandaguinea.com</a
+          >
+        </li>
       </ul>
     </section>
 
-    <!-- 4. Propiedad intelectual -->
+    <!-- 2. OBJETO -->
     <section>
-      <h2 class="text-2xl font-semibold text-[#003366] mb-4">4. Propiedad Intelectual</h2>
+      <h2 class="text-2xl font-bold text-[#003366] mb-4">2. Objeto del Sitio Web</h2>
       <p>
-        Todos los contenidos del sitio web —textos, imágenes, logotipos, marcas, estructura y
-        diseño— son propiedad de LABANDA o de terceros que han autorizado su uso.
-      </p>
-      <p>
-        Queda prohibida la reproducción o distribución sin autorización expresa por escrito del
-        titular.
+        Este sitio web tiene por finalidad presentar la actividad empresarial, servicios técnicos y
+        proyectos desarrollados por LABANDA Industrie Services, así como ofrecer un canal de
+        comunicación seguro con clientes, instituciones y socios internacionales.
       </p>
     </section>
 
-    <!-- 5. Limitación de responsabilidad -->
+    <!-- 3. CONDICIONES -->
     <section>
-      <h2 class="text-2xl font-semibold text-[#003366] mb-4">5. Limitación de Responsabilidad</h2>
+      <h2 class="text-2xl font-bold text-[#003366] mb-4">3. Condiciones de Uso</h2>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>El acceso y uso del sitio implica la aceptación plena de este Aviso Legal.</li>
+        <li>El usuario se compromete a hacer un uso lícito, diligente y conforme a la buena fe.</li>
+        <li>
+          LABANDA podrá limitar el acceso ante usos indebidos, ataques informáticos o infracciones
+          legales.
+        </li>
+      </ul>
+    </section>
+
+    <!-- 4. PROPIEDAD -->
+    <section>
+      <h2 class="text-2xl font-bold text-[#003366] mb-4">4. Propiedad Intelectual e Industrial</h2>
       <p>
-        LABANDA no se hace responsable de los posibles daños o perjuicios derivados del uso indebido
-        del sitio web, interrupciones del servicio o errores en la información publicada.
+        Todos los contenidos —textos, imágenes, logotipos, diseños, código y estructura— están
+        protegidos por la legislación internacional de propiedad intelectual. Su uso, reproducción o
+        distribución sin autorización escrita de LABANDA está expresamente prohibido.
       </p>
     </section>
 
-    <!-- 6. Enlaces externos -->
+    <!-- 5. RESPONSABILIDAD -->
     <section>
-      <h2 class="text-2xl font-semibold text-[#003366] mb-4">6. Enlaces Externos</h2>
+      <h2 class="text-2xl font-bold text-[#003366] mb-4">5. Limitación de Responsabilidad</h2>
       <p>
-        Este sitio puede contener enlaces a sitios web de terceros. LABANDA no controla ni se
-        responsabiliza del contenido o de las políticas de privacidad de dichos sitios.
+        LABANDA no garantiza la ausencia de errores técnicos ni la continuidad del servicio. No será
+        responsable de daños derivados de interrupciones, ataques cibernéticos o uso inadecuado de
+        la información.
       </p>
     </section>
 
-    <!-- 7. Protección de datos -->
+    <!-- 6. ENLACES -->
     <section>
-      <h2 class="text-2xl font-semibold text-[#003366] mb-4">7. Protección de Datos</h2>
+      <h2 class="text-2xl font-bold text-[#003366] mb-4">6. Enlaces a Terceros</h2>
       <p>
-        El tratamiento de los datos personales recabados a través de este sitio se regula conforme a
-        nuestra
-        <RouterLink to="/legal/privacy" class="text-[#FF6B35] hover:underline">
-          Política de Privacidad </RouterLink
+        El sitio puede incluir enlaces a sitios externos operados por terceros. LABANDA no asume
+        responsabilidad alguna sobre sus contenidos ni políticas de privacidad.
+      </p>
+    </section>
+
+    <!-- 7. PROTECCIÓN -->
+    <section>
+      <h2 class="text-2xl font-bold text-[#003366] mb-4">7. Protección de Datos Personales</h2>
+      <p>
+        Los datos personales recabados a través de formularios o comunicaciones se tratan conforme a
+        la
+        <RouterLink to="/legal/privacy" class="text-[#FF6B35] hover:underline"
+          >Política de Privacidad</RouterLink
         >.
       </p>
     </section>
 
-    <!-- 8. Legislación aplicable -->
+    <!-- 8. LEY Y JURISDICCIÓN -->
     <section>
-      <h2 class="text-2xl font-semibold text-[#003366] mb-4">8. Legislación Aplicable</h2>
+      <h2 class="text-2xl font-bold text-[#003366] mb-4">
+        8. Legislación Aplicable y Jurisdicción
+      </h2>
       <p>
-        Este Aviso Legal se rige por la legislación española y comunitaria. Cualquier controversia
-        se someterá a los juzgados de Madrid, España.
+        Este Aviso Legal se rige por la legislación de Guinea Ecuatorial y la normativa
+        internacional aplicable (LSSI-CE y Directiva 2000/31/CE). En caso de conflicto, las partes
+        se someterán a los tribunales competentes de Malabo o, subsidiariamente, a los de Madrid
+        (España).
       </p>
     </section>
   </section>

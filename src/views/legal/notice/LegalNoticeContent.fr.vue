@@ -1,110 +1,108 @@
 <!--
- * LegalNoticeContent.fr.vue
- * 
- * Contenu des Mentions Légales en français — LABANDA Industrie Services.
- * Conforme LSSI-CE et RGPD.
- * @author Nelson Valero
- * @since v1.0.0
- -->
+ * LegalNoticeContent.en.vue — Legal Notice
+ * Compliant with Law No. 1/2016 (Equatorial Guinea), LSSI-CE 34/2002 and EU Directive 2000/31/EC.
+ * Professional bilingual document for international corporate use.
+-->
 
 <template>
-  <section class="space-y-10 leading-relaxed">
+  <section class="space-y-12 leading-relaxed">
     <div class="bg-[#FF6B35]/10 border-l-4 border-[#FF6B35] p-5 rounded-md">
-      <p class="text-sm text-gray-700"><strong>Dernière mise à jour:</strong> Octobre 2025</p>
+      <p class="text-sm text-gray-700"><strong>Last update:</strong> October 2025</p>
       <p class="text-sm text-gray-700">
-        Conformément à la Loi 34/2002, du 11 juillet, sur les Services de la Société de
-        l'Information (LSSI-CE).
+        In compliance with Law No. 1/2016 on Personal Data Protection of Equatorial Guinea, Law
+        34/2002 (LSSI-CE) and EU Directive 2000/31/EC on electronic commerce.
       </p>
     </div>
 
-    <!-- 1. Informations de l'entreprise -->
     <section>
-      <h2 class="text-2xl font-semibold text-[#003366] mb-4">1. Informations de l'Entreprise</h2>
-      <p><strong>Dénomination sociale:</strong> LABANDA Industrie Services</p>
-      <p><strong>Activité:</strong> Services d'architecture, construction et infrastructures</p>
-      <p><strong>Adresse:</strong> Malabo, Guinée Équatoriale</p>
-      <p><strong>Email:</strong> info@labandaguinea.com</p>
-      <p><strong>Téléphone:</strong> +240 222 94 95 84</p>
-      <p><strong>Site web:</strong> https://labandaguinea.com</p>
-    </section>
-
-    <!-- 2. Objet du site -->
-    <section>
-      <h2 class="text-2xl font-semibold text-[#003366] mb-4">2. Objet du Site Web</h2>
-      <p>
-        Ce site web a pour objectif de présenter les services professionnels et projets de LABANDA
-        Industrie Services, ainsi que de faciliter le contact entre clients, partenaires et
-        collaborateurs.
-      </p>
-    </section>
-
-    <!-- 3. Conditions d'utilisation -->
-    <section>
-      <h2 class="text-2xl font-semibold text-[#003366] mb-4">3. Conditions d'Utilisation</h2>
-      <ul class="list-disc pl-6 space-y-2">
-        <li>L'accès et l'utilisation du site web sont gratuits et volontaires.</li>
-        <li>L'utilisateur s'engage à utiliser le site conformément à la loi et à la bonne foi.</li>
+      <h2 class="text-2xl font-bold text-[#003366] mb-4">1. Legal Entity Information</h2>
+      <ul class="space-y-1">
+        <li><strong>Company name:</strong> LABANDA Industrie Services S.L.</li>
         <li>
-          L'utilisation du site à des fins illicites ou contraires aux droits de tiers est
-          interdite.
+          <strong>Business activity:</strong> Architecture, urban planning, construction and
+          infrastructure.
         </li>
+        <li><strong>Address:</strong> KM5, LEA1 Building – Malabo, Equatorial Guinea.</li>
         <li>
-          LABANDA n'est pas responsable de l'utilisation abusive des informations contenues sur le
-          site.
+          <strong>Email:</strong>
+          <a href="mailto:info@labandaguinea.com" class="text-[#FF6B35] hover:underline"
+            >info@labandaguinea.com</a
+          >
+        </li>
+        <li><strong>Phone:</strong> +240 555 559 529</li>
+        <li>
+          <strong>Website:</strong>
+          <a href="https://labandaguinea.com" target="_blank" class="text-[#FF6B35] hover:underline"
+            >https://labandaguinea.com</a
+          >
         </li>
       </ul>
     </section>
 
-    <!-- 4. Propriété intellectuelle -->
     <section>
-      <h2 class="text-2xl font-semibold text-[#003366] mb-4">4. Propriété Intellectuelle</h2>
+      <h2 class="text-2xl font-bold text-[#003366] mb-4">2. Purpose of the Website</h2>
       <p>
-        Tous les contenus du site web — textes, images, logos, marques, structure et design — sont
-        la propriété de LABANDA ou de tiers qui en ont autorisé l'utilisation.
-      </p>
-      <p>
-        La reproduction ou distribution sans autorisation écrite expresse du titulaire est
-        interdite.
+        The purpose of this site is to provide institutional and commercial information about
+        LABANDA Industrie Services, present its projects and facilitate contact with clients,
+        investors and governmental entities.
       </p>
     </section>
 
-    <!-- 5. Limitation de responsabilité -->
     <section>
-      <h2 class="text-2xl font-semibold text-[#003366] mb-4">5. Limitation de Responsabilité</h2>
+      <h2 class="text-2xl font-bold text-[#003366] mb-4">3. Conditions of Use</h2>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>Access and use of the website imply full acceptance of this Legal Notice.</li>
+        <li>Users must use the content lawfully and in good faith.</li>
+        <li>
+          LABANDA reserves the right to restrict access in case of misuse, hacking or
+          non-compliance.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-[#003366] mb-4">
+        4. Intellectual and Industrial Property
+      </h2>
       <p>
-        LABANDA n'est pas responsable des dommages ou préjudices découlant d'une utilisation
-        incorrecte du site web, d'interruptions de service ou d'erreurs dans les informations
-        publiées.
+        All website content —texts, images, code, and design— is the exclusive property of LABANDA
+        or its licensors. Unauthorized reproduction or distribution is strictly prohibited.
       </p>
     </section>
 
-    <!-- 6. Liens externes -->
     <section>
-      <h2 class="text-2xl font-semibold text-[#003366] mb-4">6. Liens Externes</h2>
+      <h2 class="text-2xl font-bold text-[#003366] mb-4">5. Limitation of Liability</h2>
       <p>
-        Ce site peut contenir des liens vers des sites web tiers. LABANDA ne contrôle ni n'est
-        responsable du contenu ou des politiques de confidentialité de ces sites.
+        LABANDA shall not be held liable for damages caused by improper use of the website, service
+        interruptions or inaccuracies in information provided.
       </p>
     </section>
 
-    <!-- 7. Protection des données -->
     <section>
-      <h2 class="text-2xl font-semibold text-[#003366] mb-4">7. Protection des Données</h2>
+      <h2 class="text-2xl font-bold text-[#003366] mb-4">6. External Links</h2>
       <p>
-        Le traitement des données personnelles collectées via ce site est réglementé conformément à
-        notre
-        <RouterLink to="/legal/privacy" class="text-[#FF6B35] hover:underline">
-          Politique de Confidentialité </RouterLink
+        This site may include links to external third-party websites. LABANDA is not responsible for
+        their content or data processing practices.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-[#003366] mb-4">7. Data Protection</h2>
+      <p>
+        Personal data collected via forms or communication channels are processed in accordance with
+        our
+        <RouterLink to="/legal/privacy" class="text-[#FF6B35] hover:underline"
+          >Privacy Policy</RouterLink
         >.
       </p>
     </section>
 
-    <!-- 8. Législation applicable -->
     <section>
-      <h2 class="text-2xl font-semibold text-[#003366] mb-4">8. Législation Applicable</h2>
+      <h2 class="text-2xl font-bold text-[#003366] mb-4">8. Applicable Law and Jurisdiction</h2>
       <p>
-        Ces Mentions Légales sont régies par la législation espagnole et communautaire. Tout litige
-        sera soumis aux tribunaux de Madrid, Espagne.
+        This Legal Notice is governed by the laws of Equatorial Guinea and international standards.
+        In case of dispute, the competent courts shall be those of Malabo (Equatorial Guinea) or,
+        alternatively, Madrid (Spain).
       </p>
     </section>
   </section>

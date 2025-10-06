@@ -140,5 +140,20 @@
             "save": "Enregistrer les préférences",
             "accept_all": "Tout accepter"
         }
+    },
+    "legal": {
+        "titles": {
+            "cookies": "Politique de Cookies",
+            "privacy": "Politique de Confidentialité",
+            "notice": "Mentions Légales"
+        },
+        "subtitles": {
+            "cookies": "Informations sur l'utilisation des cookies sur notre site web",
+            "privacy": "Comment nous collectons, utilisons et protégeons vos données personnelles",
+            "notice": "Informations légales sur LABANDA Industrie Services"
+        },
+        "buttons": {
+            "back_home": "Retour à l'accueil"
+        }
     }
 }

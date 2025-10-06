@@ -18,7 +18,11 @@ const i18n = createI18n<[MessageSchema], 'es' | 'fr' | 'en'>({
     legacy: false,
     locale: 'es',          // 🇪🇸 idioma por defecto
     fallbackLocale: 'en',  // 🇬🇧 respaldo
-    messages: { es, fr, en }
+    messages: {
+        es: es as MessageSchema,
+        fr: fr as MessageSchema,
+        en: en as MessageSchema
+    }
 })
 
 export default i18n

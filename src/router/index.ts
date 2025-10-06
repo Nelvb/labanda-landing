@@ -17,17 +17,17 @@ const routes: RouteRecordRaw[] = [
     {
         path: '/legal/cookies',
         name: 'Cookies',
-        component: () => import('../views/legal/CookiesPage.vue'),
+        component: () => import('../views/legal/cookies/CookiesPage.vue'),
     },
     {
         path: '/legal/privacy',
         name: 'Privacy',
-        component: () => import('../views/legal/PrivacyPage.vue'),
+        component: () => import('../views/legal/privacy/PrivacyPage.vue'),
     },
     {
         path: '/legal/legal-notice',
         name: 'LegalNotice',
-        component: () => import('../views/legal/LegalNotice.vue'),
+        component: () => import('../views/legal/notice/LegalNoticePage.vue'),
     },
 ];
 

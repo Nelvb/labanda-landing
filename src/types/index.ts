@@ -5,15 +5,32 @@
  * @since v1.0.0
  */
 
+// Tipos para idiomas soportados
+export type SupportedLocale = 'es' | 'en' | 'fr'
+
+// Tipo para campos traducibles
+export type TranslatableField = {
+    [K in SupportedLocale]: string
+}
+
+// Tipo para estadísticas de proyecto
+export interface ProjectStat {
+    label: TranslatableField
+    value: string
+}
+
+// Tipo principal para proyectos
 export interface Project {
     id: string
-    title: { fr: string; en: string }
-    client: string
-    location: string
-    description: { fr: string; en: string }
-    category: 'architecture' | 'urbanism' | 'heritage'
+    slug: string
     image: string
-    year?: number
+    category: TranslatableField
+    title: TranslatableField
+    location: TranslatableField
+    year: string
+    client: TranslatableField
+    description: TranslatableField
+    stats: ProjectStat[]
 }
 
 export interface Service {

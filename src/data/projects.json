@@ -4,29 +4,35 @@
         "slug": "catedral-malabo",
         "image": "https://res.cloudinary.com/dy1pkrd52/image/upload/v1759581214/Catedral_Malabo_jfvmmf.webp",
         "category": {
+            "es": "Patrimonio",
             "fr": "Patrimoine",
             "en": "Heritage"
         },
         "title": {
+            "es": "Catedral de Malabo",
             "fr": "Cathédrale de Malabo",
             "en": "Malabo Cathedral"
         },
         "location": {
+            "es": "Malabo, Guinea Ecuatorial",
             "fr": "Malabo, Guinée Équatoriale",
             "en": "Malabo, Equatorial Guinea"
         },
         "year": "2007-2022",
         "client": {
+            "es": "Diócesis de Malabo",
             "fr": "Diócesis de Malabo",
             "en": "Diocese of Malabo"
         },
         "description": {
+            "es": "Restauración y reconstrucción de la histórica Catedral de Malabo tras el incendio de 2020. Obras de consolidación estructural, restauración de fachadas neogóticas y reconstrucción del tejado respetando el patrimonio arquitectónico.",
             "fr": "Restauration et reconstruction de la cathédrale historique de Malabo après l'incendie de 2020. Travaux de consolidation structurelle, restauration des façades néogothiques et reconstruction de la toiture avec respect du patrimoine architectural.",
             "en": "Restoration and reconstruction of the historic Malabo Cathedral after the 2020 fire. Structural consolidation works, restoration of neo-Gothic facades and roof reconstruction with respect for architectural heritage."
         },
         "stats": [
             {
                 "label": {
+                    "es": "SUPERFICIE",
                     "fr": "SURFACE",
                     "en": "AREA"
                 },
@@ -34,6 +40,7 @@
             },
             {
                 "label": {
+                    "es": "CAPACIDAD",
                     "fr": "CAPACITÉ",
                     "en": "CAPACITY"
                 },
@@ -41,10 +48,11 @@
             },
             {
                 "label": {
+                    "es": "DURACIÓN",
                     "fr": "DURÉE",
                     "en": "DURATION"
                 },
-                "value": "15 ans"
+                "value": "15 años"
             }
         ]
     },
@@ -53,29 +61,35 @@
         "slug": "plan-urbanistico-bata",
         "image": "https://res.cloudinary.com/dy1pkrd52/image/upload/v1759581248/Plan-urbanistico_Bata_rh140s.webp",
         "category": {
+            "es": "Urbanismo",
             "fr": "Urbanisme",
             "en": "Urban Planning"
         },
         "title": {
+            "es": "Plan Urbanístico de Bata",
             "fr": "Plan Urbanistique de Bata",
             "en": "Bata Urban Master Plan"
         },
         "location": {
+            "es": "Bata, Guinea Ecuatorial",
             "fr": "Bata, Guinée Équatoriale",
             "en": "Bata, Equatorial Guinea"
         },
         "year": "2016-2036",
         "client": {
+            "es": "Ministerio de Obras Públicas",
             "fr": "Ministère des Travaux Publics",
             "en": "Ministry of Public Works"
         },
         "description": {
+            "es": "Elaboración del plan director urbano para la modernización de Bata, incluyendo planificación de infraestructuras, zonas verdes y áreas residenciales para 300.000 habitantes.",
             "fr": "Élaboration du plan directeur d'urbanisme pour la modernisation de Bata, incluant la planification des infrastructures, des espaces verts et des zones résidentielles pour 300,000 habitants.",
             "en": "Development of the urban master plan for the modernization of Bata, including infrastructure planning, green spaces and residential areas for 300,000 inhabitants."
         },
         "stats": [
             {
                 "label": {
+                    "es": "SUPERFICIE",
                     "fr": "SUPERFICIE",
                     "en": "AREA"
                 },
@@ -83,6 +97,7 @@
             },
             {
                 "label": {
+                    "es": "POBLACIÓN",
                     "fr": "POPULATION",
                     "en": "POPULATION"
                 },
@@ -90,6 +105,7 @@
             },
             {
                 "label": {
+                    "es": "FASES",
                     "fr": "PHASES",
                     "en": "PHASES"
                 },
@@ -102,29 +118,35 @@
         "slug": "plan-urbanistico-evinayong",
         "image": "https://res.cloudinary.com/dy1pkrd52/image/upload/v1759581265/Plan_urbanistico_Evinayong_1_qlmqbi.webp",
         "category": {
+            "es": "Urbanismo",
             "fr": "Urbanisme",
             "en": "Urban Planning"
         },
         "title": {
+            "es": "Plan Urbanístico de Evinayong",
             "fr": "Plan Urbanistique d'Evinayong",
             "en": "Evinayong Urban Master Plan"
         },
         "location": {
+            "es": "Evinayong, Guinea Ecuatorial",
             "fr": "Evinayong, Guinée Équatoriale",
             "en": "Evinayong, Equatorial Guinea"
         },
         "year": "2018-2025",
         "client": {
+            "es": "Gobierno de Guinea Ecuatorial",
             "fr": "Gouvernement de Guinée Équatoriale",
             "en": "Government of Equatorial Guinea"
         },
         "description": {
+            "es": "Desarrollo urbano estratégico de la capital provincial Centro Sur, con creación de distritos modernos, infraestructuras públicas y zonas residenciales integradas.",
             "fr": "Développement urbain stratégique de la capitale de Centro Sur, incluant la création de districts urbains modernes, infrastructures publiques et zones résidentielles intégrées.",
             "en": "Strategic urban development of the Centro Sur capital, including the creation of modern urban districts, public infrastructure and integrated residential areas."
         },
         "stats": [
             {
                 "label": {
+                    "es": "INVERSIÓN",
                     "fr": "INVESTISSEMENT",
                     "en": "INVESTMENT"
                 },
@@ -132,6 +154,7 @@
             },
             {
                 "label": {
+                    "es": "DISTRITOS",
                     "fr": "DISTRICTS",
                     "en": "DISTRICTS"
                 },
@@ -139,6 +162,7 @@
             },
             {
                 "label": {
+                    "es": "HABITANTES",
                     "fr": "HABITANTS",
                     "en": "RESIDENTS"
                 },
@@ -151,29 +175,35 @@
         "slug": "viviendas-sociales-oyala",
         "image": "https://res.cloudinary.com/dy1pkrd52/image/upload/v1759581305/VVDAS_SOCIALES_7_oyala_qmh9qy.webp",
         "category": {
+            "es": "Vivienda Social",
             "fr": "Logement Social",
             "en": "Social Housing"
         },
         "title": {
-            "fr": "Viviendas Sociales Oyala",
+            "es": "Viviendas Sociales de Oyala",
+            "fr": "Logements Sociaux d’Oyala",
             "en": "Oyala Social Housing"
         },
         "location": {
+            "es": "Ciudad de la Paz, Guinea Ecuatorial",
             "fr": "Ciudad de la Paz, Guinée Équatoriale",
             "en": "Ciudad de la Paz, Equatorial Guinea"
         },
         "year": "2023-2025",
         "client": {
+            "es": "Gobierno de Guinea Ecuatorial",
             "fr": "Gouvernement de Guinée Équatoriale",
             "en": "Government of Equatorial Guinea"
         },
         "description": {
+            "es": "Construcción de 512 viviendas sociales de alta calidad en la nueva capital administrativa. Cada unidad dispone de 3 dormitorios, zonas comunes, ascensores y todos los servicios modernos.",
             "fr": "Construction de 512 logements sociaux de haute qualité dans la nouvelle capitale administrative. Chaque logement dispose de 3 chambres, espaces communs, ascenseurs et tous les services modernes.",
             "en": "Construction of 512 high-quality social housing units in the new administrative capital. Each unit features 3 bedrooms, common areas, elevators and all modern services."
         },
         "stats": [
             {
                 "label": {
+                    "es": "VIVIENDAS",
                     "fr": "LOGEMENTS",
                     "en": "UNITS"
                 },
@@ -181,6 +211,7 @@
             },
             {
                 "label": {
+                    "es": "SUPERFICIE",
                     "fr": "SURFACE",
                     "en": "AREA"
                 },
@@ -188,6 +219,7 @@
             },
             {
                 "label": {
+                    "es": "PLANTAS",
                     "fr": "ÉTAGES",
                     "en": "FLOORS"
                 },
@@ -200,29 +232,35 @@
         "slug": "175-viviendas-sevilla",
         "image": "https://res.cloudinary.com/dy1pkrd52/image/upload/v1759581209/175_Viviendas_Sevilla_liymbg.webp",
         "category": {
+            "es": "Vivienda Social",
             "fr": "Logement Social",
             "en": "Social Housing"
         },
         "title": {
+            "es": "175 Viviendas Sociales en Sevilla",
             "fr": "175 Logements Sociaux Séville",
             "en": "175 Social Housing Units Seville"
         },
         "location": {
+            "es": "Polígono Sur, Sevilla, España",
             "fr": "Polígono Sur, Séville, Espagne",
             "en": "Polígono Sur, Seville, Spain"
         },
         "year": "2021-2024",
         "client": {
+            "es": "EPSA Andalucía",
             "fr": "EPSA Andalucía",
             "en": "EPSA Andalusia"
         },
         "description": {
+            "es": "Promoción de 175 viviendas protegidas en régimen de alquiler en el Polígono Sur de Sevilla. Proyecto financiado por fondos NextGeneration EU con zonas comunes y servicios integrados.",
             "fr": "Promotion de 175 logements de protection officielle en régime de location dans le Polígono Sur de Séville. Projet financé par les fonds NextGeneration EU incluant zones communes et services intégrés.",
             "en": "Development of 175 officially protected rental housing units in Seville's Polígono Sur. Project funded by NextGeneration EU funds including common areas and integrated services."
         },
         "stats": [
             {
                 "label": {
+                    "es": "VIVIENDAS",
                     "fr": "LOGEMENTS",
                     "en": "UNITS"
                 },
@@ -230,6 +268,7 @@
             },
             {
                 "label": {
+                    "es": "SUPERFICIE",
                     "fr": "SURFACE",
                     "en": "AREA"
                 },
@@ -237,6 +276,7 @@
             },
             {
                 "label": {
+                    "es": "TIPO",
                     "fr": "TYPE",
                     "en": "TYPE"
                 },
@@ -249,29 +289,35 @@
         "slug": "viviendas-unifamiliares-sanxenxo",
         "image": "https://res.cloudinary.com/dy1pkrd52/image/upload/v1759581282/Viviendas_unifamiliares_Sanxenxo_bubzkp.webp",
         "category": {
+            "es": "Residencial",
             "fr": "Résidentiel",
             "en": "Residential"
         },
         "title": {
-            "fr": "Viviendas Unifamiliares Sanxenxo",
+            "es": "Viviendas Unifamiliares Sanxenxo",
+            "fr": "Maisons Unifamiliales de Sanxenxo",
             "en": "Sanxenxo Single-Family Homes"
         },
         "location": {
+            "es": "Sanxenxo, Pontevedra, España",
             "fr": "Sanxenxo, Pontevedra, Espagne",
             "en": "Sanxenxo, Pontevedra, Spain"
         },
         "year": "2022-2024",
         "client": {
+            "es": "Promotor Privado",
             "fr": "Promoteur Privé",
             "en": "Private Developer"
         },
         "description": {
+            "es": "Desarrollo de villas unifamiliares de lujo en la costa de Sanxenxo. Arquitectura contemporánea integrada en el paisaje de las Rías Baixas, con jardines privados y vistas al mar.",
             "fr": "Développement résidentiel de villas unifamiliales de luxe dans la zone côtière de Sanxenxo. Architecture contemporaine intégrée au paysage des Rías Baixas avec jardins privés et vues sur mer.",
             "en": "Development of luxury single-family villas in the coastal area of Sanxenxo. Contemporary architecture integrated into the Rías Baixas landscape with private gardens and sea views."
         },
         "stats": [
             {
                 "label": {
+                    "es": "VILLAS",
                     "fr": "VILLAS",
                     "en": "VILLAS"
                 },
@@ -279,6 +325,7 @@
             },
             {
                 "label": {
+                    "es": "DORMITORIOS",
                     "fr": "CHAMBRES",
                     "en": "BEDROOMS"
                 },
@@ -286,6 +333,7 @@
             },
             {
                 "label": {
+                    "es": "PARCELA",
                     "fr": "PARCELLE",
                     "en": "PLOT"
                 },

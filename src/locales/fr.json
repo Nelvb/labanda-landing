@@ -155,5 +155,9 @@
         "buttons": {
             "back_home": "Retour à l'accueil"
         }
+    },
+    "faq": {
+        "title": "Foire aux Questions",
+        "subtitle": "Réponses claires sur nos services, notre expérience et nos projets."
     }
 }

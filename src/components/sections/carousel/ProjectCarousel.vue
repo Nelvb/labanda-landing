@@ -8,7 +8,6 @@
  * @since v1.0.0
  */
 
-import { useI18n } from 'vue-i18n'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules'
 import 'swiper/css'
@@ -16,10 +15,18 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/effect-fade'
 
-// Import projects data
+// Import projects data and composable
 import projectsData from '@/data/projects.json'
+import { useProjectTranslations } from '@/composables/useProjectTranslations'
 
-const { locale } = useI18n()
+// Usar el composable para manejo robusto de traducciones
+const {
+  getProjectTitle,
+  getProjectCategory,
+  getProjectLocation,
+  getProjectDescription,
+  getStatLabel
+} = useProjectTranslations()
 
 const modules = [Navigation, Pagination, Autoplay, EffectFade]
 
@@ -54,84 +61,108 @@ const swiperOptions = {
 
 <template>
   <div class="project-carousel w-full">
-    <!-- Altura adaptativa: más alta en mobile para stack vertical -->
     <Swiper v-bind="swiperOptions" class="w-full h-[820px] md:h-[600px] lg:h-[700px] pb-16">
-      <SwiperSlide
-        v-for="project in projectsData"
-        :key="project.id"
-        class="relative"
-      >
-        <!-- Layout: Stack vertical en mobile, horizontal en desktop -->
+      <SwiperSlide v-for="project in projectsData" :key="project.id" class="relative">
         <div class="flex flex-col lg:flex-row h-full">
-          
           <!-- PROJECT IMAGE -->
-          <!-- Mobile: 50% altura, Desktop: 60% ancho -->
           <div class="relative w-full lg:w-[60%] h-1/2 lg:h-full">
-            <!-- Image -->
             <img
               :src="project.image"
-              :alt="locale === 'fr' ? project.title.fr : project.title.en"
+              :alt="getProjectTitle(project)"
               class="absolute inset-0 w-full h-full object-cover"
               loading="lazy"
             />
-            
-            <!-- Gradient overlay -->
-            <div class="absolute inset-0 bg-gradient-to-b lg:bg-gradient-to-r from-black/40 via-black/20 to-transparent lg:to-black/60" />
+            <div
+              class="absolute inset-0 bg-gradient-to-b lg:bg-gradient-to-r from-black/40 via-black/20 to-transparent lg:to-black/60"
+            />
           </div>
 
-<!-- PROJECT INFO -->
-          <!-- Mobile/Tablet: textos centrados, Desktop: alineación izquierda -->
+          <!-- PROJECT INFO -->
           <div class="relative w-full lg:w-[40%] h-1/2 lg:h-full bg-white overflow-hidden">
             <div class="flex items-start lg:items-center justify-center p-4 lg:p-12 h-full">
               <div class="max-w-lg w-full">
-                
                 <!-- Category Badge -->
                 <div class="text-center lg:text-left mb-2 lg:mb-4">
-                  <span class="inline-block px-3 py-1 lg:px-4 lg:py-2 bg-[#FF6B35]/10 text-[#FF6B35] text-xs lg:text-sm font-semibold rounded-full uppercase tracking-wide">
-                    {{ locale === 'fr' ? project.category.fr : project.category.en }}
+                  <span
+                    class="inline-block px-3 py-1 lg:px-4 lg:py-2 bg-[#FF6B35]/10 text-[#FF6B35] text-xs lg:text-sm font-semibold rounded-full uppercase tracking-wide"
+                  >
+                    {{ getProjectCategory(project) }}
                   </span>
                 </div>
 
                 <!-- Title -->
-                <h3 class="text-xl lg:text-3xl xl:text-4xl font-bold text-[#003366] mb-1 lg:mb-3 text-center lg:text-left">
-                  {{ locale === 'fr' ? project.title.fr : project.title.en }}
+                <h3
+                  class="text-xl lg:text-3xl xl:text-4xl font-bold text-[#003366] mb-1 lg:mb-3 text-center lg:text-left"
+                >
+                  {{ getProjectTitle(project) }}
                 </h3>
 
                 <!-- Location & Year -->
-                <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2 lg:gap-4 text-gray-600 mb-2 lg:mb-6">
+                <div
+                  class="flex flex-wrap items-center justify-center lg:justify-start gap-2 lg:gap-4 text-gray-600 mb-2 lg:mb-6"
+                >
                   <div class="flex items-center gap-1.5">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 lg:w-5 lg:h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-4 h-4 lg:w-5 lg:h-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
                     </svg>
-                    <span class="text-xs lg:text-sm">{{ locale === 'fr' ? project.location.fr : project.location.en }}</span>
+                    <span class="text-xs lg:text-sm">{{
+                      getProjectLocation(project)
+                    }}</span>
                   </div>
-                  
+
                   <div class="flex items-center gap-1.5">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 lg:w-5 lg:h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-4 h-4 lg:w-5 lg:h-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                      />
                     </svg>
                     <span class="text-xs lg:text-sm">{{ project.year }}</span>
                   </div>
                 </div>
 
                 <!-- Description -->
-                <p class="text-xs lg:text-base text-gray-700 leading-tight lg:leading-relaxed mb-3 lg:mb-8 line-clamp-3 lg:line-clamp-none text-center lg:text-left">
-                  {{ locale === 'fr' ? project.description.fr : project.description.en }}
+                <p
+                  class="text-xs lg:text-base text-gray-700 leading-tight lg:leading-relaxed mb-3 lg:mb-8 line-clamp-3 lg:line-clamp-none text-center lg:text-left"
+                >
+                  {{ getProjectDescription(project) }}
                 </p>
 
                 <!-- Stats -->
                 <div class="grid grid-cols-3 gap-2 lg:gap-4">
-                  <div
-                    v-for="(stat, index) in project.stats"
-                    :key="index"
-                    class="text-center"
-                  >
+                  <div v-for="(stat, index) in project.stats" :key="index" class="text-center">
                     <div class="text-base lg:text-2xl font-bold text-[#FF6B35] mb-0.5 lg:mb-1">
                       {{ stat.value }}
                     </div>
-                    <div class="text-[9px] lg:text-xs text-gray-500 uppercase tracking-wide leading-tight">
-                      {{ locale === 'fr' ? stat.label.fr : stat.label.en }}
+                    <div
+                      class="text-[9px] lg:text-xs text-gray-500 uppercase tracking-wide leading-tight"
+                    >
+                      {{ getStatLabel(stat) }}
                     </div>
                   </div>
                 </div>
@@ -186,8 +217,8 @@ const swiperOptions = {
   left: 50%;
   width: 12px;
   height: 12px;
-  border-top: 3px solid #FF6B35;
-  border-right: 3px solid #FF6B35;
+  border-top: 3px solid #ff6b35;
+  border-right: 3px solid #ff6b35;
   z-index: 10;
 }
 
@@ -227,7 +258,7 @@ const swiperOptions = {
 }
 
 :deep(.swiper-pagination-bullet-active) {
-  background: #FF6B35;
+  background: #ff6b35;
   transform: scale(1.3);
   box-shadow: 0 2px 8px rgba(255, 107, 53, 0.4);
 }

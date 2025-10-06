@@ -155,5 +155,9 @@
         "buttons": {
             "back_home": "Back to home"
         }
+    },
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "subtitle": "Clear answers about our services, expertise, and projects."
     }
 }

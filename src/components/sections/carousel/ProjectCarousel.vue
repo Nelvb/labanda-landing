@@ -8,6 +8,7 @@
  * @since v1.0.0
  */
 
+import { useI18n } from 'vue-i18n'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules'
 import 'swiper/css'
@@ -15,18 +16,10 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/effect-fade'
 
-// Import projects data and composable
+// Import projects data
 import projectsData from '@/data/projects.json'
-import { useProjectTranslations } from '@/composables/useProjectTranslations'
 
-// Usar el composable para manejo robusto de traducciones
-const {
-  getProjectTitle,
-  getProjectCategory,
-  getProjectLocation,
-  getProjectDescription,
-  getStatLabel
-} = useProjectTranslations()
+const { locale } = useI18n()
 
 const modules = [Navigation, Pagination, Autoplay, EffectFade]
 
@@ -61,32 +54,39 @@ const swiperOptions = {
 
 <template>
   <div class="project-carousel w-full">
+    <!-- Altura adaptativa: más alta en mobile para stack vertical -->
     <Swiper v-bind="swiperOptions" class="w-full h-[820px] md:h-[600px] lg:h-[700px] pb-16">
       <SwiperSlide v-for="project in projectsData" :key="project.id" class="relative">
+        <!-- Layout: Stack vertical en mobile, horizontal en desktop -->
         <div class="flex flex-col lg:flex-row h-full">
           <!-- PROJECT IMAGE -->
+          <!-- Mobile: 50% altura, Desktop: 60% ancho -->
           <div class="relative w-full lg:w-[60%] h-1/2 lg:h-full">
+            <!-- Image -->
             <img
               :src="project.image"
-              :alt="getProjectTitle(project)"
+              :alt="locale === 'fr' ? project.title.fr : project.title.en"
               class="absolute inset-0 w-full h-full object-cover"
               loading="lazy"
             />
+
+            <!-- Gradient overlay -->
             <div
               class="absolute inset-0 bg-gradient-to-b lg:bg-gradient-to-r from-black/40 via-black/20 to-transparent lg:to-black/60"
             />
           </div>
 
           <!-- PROJECT INFO -->
+          <!-- Mobile/Tablet: textos centrados, Desktop: alineación izquierda -->
           <div class="relative w-full lg:w-[40%] h-1/2 lg:h-full bg-white overflow-hidden">
-            <div class="flex items-start lg:items-center justify-center p-4 lg:p-12 h-full">
+            <div class="flex items-center justify-center p-4 lg:p-12 h-full">
               <div class="max-w-lg w-full">
                 <!-- Category Badge -->
                 <div class="text-center lg:text-left mb-2 lg:mb-4">
                   <span
                     class="inline-block px-3 py-1 lg:px-4 lg:py-2 bg-[#FF6B35]/10 text-[#FF6B35] text-xs lg:text-sm font-semibold rounded-full uppercase tracking-wide"
                   >
-                    {{ getProjectCategory(project) }}
+                    {{ locale === 'fr' ? project.category.fr : project.category.en }}
                   </span>
                 </div>
 
@@ -94,7 +94,7 @@ const swiperOptions = {
                 <h3
                   class="text-xl lg:text-3xl xl:text-4xl font-bold text-[#003366] mb-1 lg:mb-3 text-center lg:text-left"
                 >
-                  {{ getProjectTitle(project) }}
+                  {{ locale === 'fr' ? project.title.fr : project.title.en }}
                 </h3>
 
                 <!-- Location & Year -->
@@ -123,7 +123,7 @@ const swiperOptions = {
                       />
                     </svg>
                     <span class="text-xs lg:text-sm">{{
-                      getProjectLocation(project)
+                      locale === 'fr' ? project.location.fr : project.location.en
                     }}</span>
                   </div>
 
@@ -150,7 +150,7 @@ const swiperOptions = {
                 <p
                   class="text-xs lg:text-base text-gray-700 leading-tight lg:leading-relaxed mb-3 lg:mb-8 line-clamp-3 lg:line-clamp-none text-center lg:text-left"
                 >
-                  {{ getProjectDescription(project) }}
+                  {{ locale === 'fr' ? project.description.fr : project.description.en }}
                 </p>
 
                 <!-- Stats -->
@@ -162,7 +162,7 @@ const swiperOptions = {
                     <div
                       class="text-[9px] lg:text-xs text-gray-500 uppercase tracking-wide leading-tight"
                     >
-                      {{ getStatLabel(stat) }}
+                      {{ locale === 'fr' ? stat.label.fr : stat.label.en }}
                     </div>
                   </div>
                 </div>
@@ -236,20 +236,36 @@ const swiperOptions = {
    PAGINATION (Puntos de guía)
    ======================================== */
 
+/* DESKTOP: Dots debajo de todo */
 :deep(.swiper-pagination) {
   bottom: 0 !important;
   position: absolute !important;
   padding-bottom: 12px;
 }
 
+/* TABLET & MÓVIL: Dots encima del texto */
+@media (max-width: 1023px) {
+  :deep(.swiper-pagination) {
+    bottom: 50% !important; /* Encima del texto */
+    padding-bottom: 6px;
+  }
+}
+
 :deep(.swiper-pagination-bullet) {
   width: 14px;
   height: 14px;
-  background: rgba(0, 51, 102, 0.3);
+  background: rgba(255, 255, 255, 0.7); /* Desktop */
   opacity: 1;
   margin: 0 6px !important;
   transition: all 0.3s ease;
   cursor: pointer;
+}
+
+/* TABLET & MÓVIL: Dots más oscuros */
+@media (max-width: 1023px) {
+  :deep(.swiper-pagination-bullet) {
+    background: rgba(255, 255, 255, 0.5); /* Más oscuro en móvil/tablet */
+  }
 }
 
 :deep(.swiper-pagination-bullet):hover {

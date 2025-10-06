@@ -210,18 +210,87 @@ const services = [
             </p>
 
             <!-- Capabilities -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 max-w-3xl mx-auto">
-              <div
-                v-for="(capability, capIndex) in $i18n.locale === 'fr'
-                  ? service.capabilities.fr
-                  : $i18n.locale === 'en'
-                    ? service.capabilities.en
-                    : service.capabilities.es"
-                :key="capIndex"
-                class="flex items-center justify-center md:justify-start gap-2 md:gap-3 text-left"
-              >
-                <div class="w-2 h-2 bg-[#FF6B35] rounded-full flex-shrink-0" />
-                <span class="text-sm md:text-base lg:text-lg">{{ capability }}</span>
+            <div class="max-w-2xl mx-auto md:max-w-4xl">
+              <!-- Móvil: Una columna -->
+              <div class="flex flex-col items-center space-y-4 md:hidden">
+                <div
+                  v-for="(capability, index) in [
+                    $i18n.locale === 'fr'
+                      ? service.capabilities.fr[0]
+                      : $i18n.locale === 'en'
+                        ? service.capabilities.en[0]
+                        : service.capabilities.es[0],
+                    $i18n.locale === 'fr'
+                      ? service.capabilities.fr[1]
+                      : $i18n.locale === 'en'
+                        ? service.capabilities.en[1]
+                        : service.capabilities.es[1],
+                    $i18n.locale === 'fr'
+                      ? service.capabilities.fr[2]
+                      : $i18n.locale === 'en'
+                        ? service.capabilities.en[2]
+                        : service.capabilities.es[2],
+                    $i18n.locale === 'fr'
+                      ? service.capabilities.fr[3]
+                      : $i18n.locale === 'en'
+                        ? service.capabilities.en[3]
+                        : service.capabilities.es[3],
+                  ]"
+                  :key="index"
+                  class="flex items-center gap-3"
+                >
+                  <div class="w-2 h-2 bg-[#FF6B35] rounded-full flex-shrink-0" />
+                  <span class="text-sm md:text-base lg:text-lg">{{ capability }}</span>
+                </div>
+              </div>
+
+              <!-- Tablet/Desktop: Mantener EXACTAMENTE como está -->
+              <div class="hidden md:flex flex-row justify-center gap-8">
+                <!-- Columna 1 -->
+                <div class="space-y-3 md:space-y-4">
+                  <div
+                    v-for="capability in [
+                      $i18n.locale === 'fr'
+                        ? service.capabilities.fr[0]
+                        : $i18n.locale === 'en'
+                          ? service.capabilities.en[0]
+                          : service.capabilities.es[0],
+                      $i18n.locale === 'fr'
+                        ? service.capabilities.fr[1]
+                        : $i18n.locale === 'en'
+                          ? service.capabilities.en[1]
+                          : service.capabilities.es[1],
+                    ]"
+                    :key="capability"
+                    class="flex items-center gap-3"
+                  >
+                    <div class="w-2 h-2 bg-[#FF6B35] rounded-full flex-shrink-0" />
+                    <span class="text-sm md:text-base lg:text-lg">{{ capability }}</span>
+                  </div>
+                </div>
+
+                <!-- Columna 2 -->
+                <div class="space-y-3 md:space-y-4">
+                  <div
+                    v-for="capability in [
+                      $i18n.locale === 'fr'
+                        ? service.capabilities.fr[2]
+                        : $i18n.locale === 'en'
+                          ? service.capabilities.en[2]
+                          : service.capabilities.es[2],
+                      $i18n.locale === 'fr'
+                        ? service.capabilities.fr[3]
+                        : $i18n.locale === 'en'
+                          ? service.capabilities.en[3]
+                          : service.capabilities.es[3],
+                    ]"
+                    :key="capability"
+                    class="flex items-center gap-3"
+                  >
+                    <div class="w-2 h-2 bg-[#FF6B35] rounded-full flex-shrink-0" />
+                    <span class="text-sm md:text-base lg:text-lg">{{ capability }}</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

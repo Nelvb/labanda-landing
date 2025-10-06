@@ -2,9 +2,6 @@ import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
-import postcssNesting from 'postcss-nesting'
-import tailwindcss from 'tailwindcss'
-import autoprefixer from 'autoprefixer'
 
 export default defineConfig({
   plugins: [
@@ -17,13 +14,7 @@ export default defineConfig({
     },
   },
   css: {
-    postcss: {
-      plugins: [
-        postcssNesting,
-        tailwindcss,
-        autoprefixer,
-      ],
-    },
+    postcss: './postcss.config.js',
   },
   build: {
     cssCodeSplit: false,
@@ -35,5 +26,8 @@ export default defineConfig({
         }
       }
     }
-  }
+  },
+  optimizeDeps: {
+    include: ['swiper/css', 'swiper/css/navigation', 'swiper/css/pagination', 'swiper/css/effect-fade'],
+  },
 })

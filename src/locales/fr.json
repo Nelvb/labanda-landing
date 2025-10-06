@@ -50,7 +50,7 @@
             "name_label": "Nom complet",
             "name_placeholder": "Jean Dupont",
             "email_label": "Email",
-            "email_placeholder": "jean.dupont@exemple.com",
+            "email_placeholder": "jean.dupont{'@'}exemple.com",
             "company_label": "Entreprise / Organisation",
             "company_placeholder": "Nom de votre entreprise",
             "type_label": "Type de projet",
@@ -78,20 +78,20 @@
         },
         "info": {
             "address_title": "Localisation",
-            "address": "Malabo, Guinée Équatoriale\nAfrique Centrale",
+            "address": "Malabo, Guinée Équatoriale\\nAfrique Centrale",
             "phone_title": "Téléphone",
             "phone": "+240 222 94 95 84",
             "email_title": "Email",
-            "email": "info@labandaguinea.com",
+            "email": "info{'@'}labandaguinea.com",
             "hours_title": "Horaires",
-            "hours": "Lundi - Vendredi: 8h00 - 18h00\nSamedi: Sur rendez-vous"
+            "hours": "Lundi - Vendredi: 8h00 - 18h00\\nSamedi: Sur rendez-vous"
         },
         "privacy_notice": "En envoyant ce formulaire, vous acceptez notre"
     },
     "footer": {
         "description": "Expertise en architecture, construction et urbanisme en Afrique Centrale. Engagement, excellence et durabilité.",
         "legal_title": "Mentions légales",
-        "legal_notice": "Avis légal",
+        "legal_notice": "Mentions légales",
         "privacy_policy": "Politique de confidentialité",
         "cookies_policy": "Politique de cookies",
         "contact_title": "Contact",

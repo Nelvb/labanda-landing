@@ -50,7 +50,7 @@
             "name_label": "Nombre completo",
             "name_placeholder": "Juan Pérez",
             "email_label": "Correo electrónico",
-            "email_placeholder": "juan.perez@example.com",
+            "email_placeholder": "juan.perez{'@'}example.com",
             "company_label": "Empresa / Organización",
             "company_placeholder": "Nombre de tu empresa",
             "type_label": "Tipo de proyecto",
@@ -78,13 +78,13 @@
         },
         "info": {
             "address_title": "Dirección",
-            "address": "Malabo, Guinea Ecuatorial\nÁfrica Central",
+            "address": "Malabo, Guinea Ecuatorial\\nÁfrica Central",
             "phone_title": "Teléfono",
             "phone": "+240 222 94 95 84",
             "email_title": "Correo",
-            "email": "info@labandaguinea.com",
+            "email": "info{'@'}labandaguinea.com",
             "hours_title": "Horario",
-            "hours": "Lunes - Viernes: 8:00 - 18:00\nSábado: Con cita previa"
+            "hours": "Lunes - Viernes: 8:00 - 18:00\\nSábado: Con cita previa"
         },
         "privacy_notice": "Al enviar este formulario, aceptas nuestra"
     },

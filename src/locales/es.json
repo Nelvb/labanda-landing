@@ -1,0 +1,100 @@
+{
+    "nav": {
+        "home": "Inicio",
+        "about": "Sobre nosotros",
+        "services": "Servicios",
+        "projects": "Proyectos",
+        "references": "Referencias",
+        "contact": "Contacto"
+    },
+    "hero": {
+        "title": "Excelencia en Arquitectura e Infraestructura",
+        "subtitle": "Más de 30 años de experiencia al servicio del desarrollo estratégico de África Central",
+        "cta_primary": "Descubrir nuestros proyectos",
+        "cta_secondary": "Contactar"
+    },
+    "stats": {
+        "experience": "AÑOS DE EXPERIENCIA",
+        "projects": "PROYECTOS REALIZADOS",
+        "countries": "PAÍSES DE OPERACIÓN"
+    },
+    "about": {
+        "title": "Sobre LABANDA",
+        "intro": "LABANDA Industrie Services apoya a gobiernos e instituciones en la ejecución de grandes proyectos: catedrales, planificación urbana, universidades e infraestructuras sostenibles.",
+        "history_title": "Nuestra Historia",
+        "history_text": "Fundada con la visión de contribuir al desarrollo sostenible de África Central, LABANDA Industrie Services se ha consolidado como un socio de confianza para proyectos institucionales.",
+        "mission_title": "Nuestra Misión",
+        "mission_text": "Diseñar y construir infraestructuras sostenibles que transformen comunidades y fomenten el crecimiento económico en África Central.",
+        "vision_title": "Nuestra Visión",
+        "vision_text": "Ser líderes en arquitectura e infraestructuras estratégicas en África Central, reconocidos por nuestra excelencia técnica y compromiso con la sostenibilidad.",
+        "presence_title": "Presencia Regional",
+        "countries": {
+            "guinea": "Guinea Ecuatorial",
+            "cameroon": "Camerún",
+            "congo": "Congo Brazzaville",
+            "chad": "Chad"
+        }
+    },
+    "services": {
+        "title": "Nuestros Servicios",
+        "subtitle": "Soluciones completas para proyectos de infraestructura en África Central"
+    },
+    "projects": {
+        "title": "Nuestros Proyectos",
+        "subtitle": "Portafolio de obras emblemáticas en África Central e internacionalmente"
+    },
+    "contact": {
+        "title": "Contáctanos",
+        "subtitle": "Inicia tu proyecto con nuestros expertos en arquitectura e infraestructura",
+        "form": {
+            "name_label": "Nombre completo",
+            "name_placeholder": "Juan Pérez",
+            "email_label": "Correo electrónico",
+            "email_placeholder": "juan.perez@example.com",
+            "company_label": "Empresa / Organización",
+            "company_placeholder": "Nombre de tu empresa",
+            "type_label": "Tipo de proyecto",
+            "type_placeholder": "Selecciona un tipo",
+            "type_options": {
+                "general": "Consulta general",
+                "quote": "Solicitud de presupuesto",
+                "investment": "Oportunidades de inversión",
+                "partnership": "Colaboración estratégica"
+            },
+            "message_label": "Mensaje",
+            "message_placeholder": "Describe tu proyecto en detalle...",
+            "submit": "Enviar mensaje",
+            "sending": "Enviando...",
+            "success_title": "¡Mensaje enviado con éxito!",
+            "success_message": "Nos pondremos en contacto contigo lo antes posible.",
+            "error_title": "Error al enviar",
+            "error_message": "Intenta de nuevo o contáctanos directamente."
+        },
+        "errors": {
+            "name": "El nombre debe tener al menos 3 caracteres",
+            "email": "Introduce un correo válido",
+            "type": "Selecciona un tipo de proyecto",
+            "message": "El mensaje debe tener al menos 20 caracteres"
+        },
+        "info": {
+            "address_title": "Dirección",
+            "address": "Malabo, Guinea Ecuatorial\nÁfrica Central",
+            "phone_title": "Teléfono",
+            "phone": "+240 222 94 95 84",
+            "email_title": "Correo",
+            "email": "info@labandaguinea.com",
+            "hours_title": "Horario",
+            "hours": "Lunes - Viernes: 8:00 - 18:00\nSábado: Con cita previa"
+        },
+        "privacy_notice": "Al enviar este formulario, aceptas nuestra"
+    },
+    "footer": {
+        "description": "Diseñamos y construimos infraestructuras sostenibles que impulsan el desarrollo de África Central.",
+        "legal_title": "Información Legal",
+        "legal_notice": "Aviso Legal",
+        "privacy_policy": "Política de Privacidad",
+        "cookies_policy": "Política de Cookies",
+        "contact_title": "Contacto",
+        "made_by": "Diseñado y desarrollado por"
+    }
+}

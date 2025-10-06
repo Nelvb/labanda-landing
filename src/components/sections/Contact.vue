@@ -215,6 +215,20 @@ const submitForm = async () => {
             >
               {{ loading ? t('contact.form.sending') : t('contact.form.submit') }}
             </Button>
+            
+            <!-- Aviso de política de privacidad -->
+            <p class="text-xs text-gray-700 text-center mt-4">
+              {{ t('contact.privacy_notice') }}
+              <a
+                href="/legal/privacy"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-[#0072CE] hover:text-[#FF6B35] underline transition-colors"
+              >
+                {{ t('footer.privacy_policy') }}
+              </a>.
+            </p>
+
           </form>
         </div>
 

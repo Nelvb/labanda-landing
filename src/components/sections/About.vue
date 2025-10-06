@@ -187,3 +187,9 @@ onMounted(() => {
     </div>
   </section>
 </template>
+
+<style scoped>
+section {
+  scroll-margin-top: 80px;
+}
+</style>

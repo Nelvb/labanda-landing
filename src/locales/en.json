@@ -50,7 +50,7 @@
             "name_label": "Full Name",
             "name_placeholder": "John Smith",
             "email_label": "Email",
-            "email_placeholder": "john.smith{'@'}example.com",
+            "email_placeholder": "john.smith@example.com",
             "company_label": "Company / Organization",
             "company_placeholder": "Your company name",
             "type_label": "Project Type",
@@ -78,13 +78,23 @@
         },
         "info": {
             "address_title": "Location",
-            "address": "Malabo, Equatorial Guinea\\nCentral Africa",
+            "address": "Malabo, Equatorial Guinea\nCentral Africa",
             "phone_title": "Phone",
             "phone": "+240 222 94 95 84",
             "email_title": "Email",
-            "email": "info{'@'}labandaguinea.com",
+            "email": "info@labandaguinea.com",
             "hours_title": "Hours",
-            "hours": "Monday - Friday: 8:00 AM - 6:00 PM\\nSaturday: By appointment"
-        }
+            "hours": "Monday - Friday: 8:00 AM - 6:00 PM\nSaturday: By appointment"
+        },
+        "privacy_notice": "By submitting this form, you accept our"
+    },
+    "footer": {
+        "description": "Expertise in architecture, construction and urban planning in Central Africa. Commitment, excellence and sustainability.",
+        "legal_title": "Legal",
+        "legal_notice": "Legal Notice",
+        "privacy_policy": "Privacy Policy",
+        "cookies_policy": "Cookies Policy",
+        "contact_title": "Contact",
+        "made_by": "Designed & developed by"
     }
 }

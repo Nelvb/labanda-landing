@@ -1,20 +1,31 @@
-<script setup lang="ts">
-import Header from './components/layout/Header.vue'
-import Hero from './components/sections/Hero.vue'
-import Stats from './components/sections/Stats.vue'
-import About from './components/sections/About.vue'
-import Services from './components/sections/Services.vue'
-import Projects from './components/sections/Projects.vue'
-import Contact from './components/sections/Contact.vue'
+<!--
+ * App.vue — Shell global con Header condicional.
+ * Oculta la navbar en páginas legales (cookies, privacy, legal-notice).
+ * @since v1.0.1
+-->
 
+<script setup lang="ts">
+import { useRoute } from 'vue-router'
+import AppHeader from '@/components/layout/AppHeader.vue'
+import AppFooter from '@/components/layout/AppFooter.vue'
+
+const route = useRoute()
+
+// Rutas donde NO queremos mostrar el Header
+const hideHeaderRoutes = ['/legal/cookies', '/legal/privacy', '/legal/legal-notice']
 </script>
 
 <template>
-  <Header />
-  <Hero />
-  <Stats />
-  <About />
-  <Services />
-  <Projects />
-   <Contact />
+  <div class="flex flex-col min-h-screen bg-white text-gray-800">
+    <!-- Header solo si no es página legal -->
+    <AppHeader v-if="!hideHeaderRoutes.includes(route.path)" />
+
+    <!-- Contenido dinámico -->
+    <main class="flex-grow">
+      <RouterView />
+    </main>
+
+    <!-- Footer global -->
+    <AppFooter />
+  </div>
 </template>

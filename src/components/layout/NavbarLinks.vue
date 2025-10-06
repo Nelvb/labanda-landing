@@ -25,7 +25,7 @@ const props = defineProps<{
       @click="props.scrollToSection('accueil')"
       :class="[
         'font-semibold text-lg hover:text-[#FF6B35] transition',
-        props.isScrolled ? 'text-[#003366]' : 'text-white'
+        props.isScrolled ? 'text-[#003366]' : 'text-white',
       ]"
     >
       {{ t('nav.home') }}
@@ -35,7 +35,7 @@ const props = defineProps<{
       @click="props.scrollToSection('apropos')"
       :class="[
         'font-semibold text-lg hover:text-[#FF6B35] transition',
-        props.isScrolled ? 'text-[#003366]' : 'text-white'
+        props.isScrolled ? 'text-[#003366]' : 'text-white',
       ]"
     >
       {{ t('nav.about') }}
@@ -45,7 +45,7 @@ const props = defineProps<{
       @click="props.scrollToSection('services')"
       :class="[
         'font-semibold text-lg hover:text-[#FF6B35] transition',
-        props.isScrolled ? 'text-[#003366]' : 'text-white'
+        props.isScrolled ? 'text-[#003366]' : 'text-white',
       ]"
     >
       {{ t('nav.services') }}
@@ -55,17 +55,27 @@ const props = defineProps<{
       @click="props.scrollToSection('projects')"
       :class="[
         'font-semibold text-lg hover:text-[#FF6B35] transition',
-        props.isScrolled ? 'text-[#003366]' : 'text-white'
+        props.isScrolled ? 'text-[#003366]' : 'text-white',
       ]"
     >
       {{ t('nav.projects') }}
     </button>
 
     <button
+      @click="props.scrollToSection('faq')"
+      :class="[
+        'font-semibold text-lg hover:text-[#FF6B35] transition',
+        props.isScrolled ? 'text-[#003366]' : 'text-white',
+      ]"
+    >
+      {{ t('nav.faq') }}
+    </button>
+
+    <button
       @click="props.scrollToSection('contact')"
       :class="[
         'font-semibold text-lg hover:text-[#FF6B35] transition',
-        props.isScrolled ? 'text-[#003366]' : 'text-white'
+        props.isScrolled ? 'text-[#003366]' : 'text-white',
       ]"
     >
       {{ t('nav.contact') }}

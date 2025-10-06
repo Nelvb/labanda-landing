@@ -8,7 +8,7 @@
  */
 
 defineOptions({
-  name: 'CompanyAbout'
+  name: 'CompanyAbout',
 })
 import { ref, onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
@@ -27,7 +27,7 @@ onMounted(() => {
         }
       })
     },
-    { threshold: 0.2 }
+    { threshold: 0.2 },
   )
 
   if (aboutSection.value) {
@@ -39,25 +39,25 @@ onMounted(() => {
 <template>
   <section id="apropos" ref="aboutSection" class="py-12 md:py-16 bg-white">
     <div class="container mx-auto px-6">
-      
       <!-- Título principal -->
       <h2 class="text-4xl lg:text-5xl font-bold text-center text-[#003366] mb-6">
         {{ t('about.title') }}
       </h2>
 
       <!-- Intro corporativa -->
-      <p class="text-xl lg:text-2xl text-center text-gray-700 max-w-4xl mx-auto mb-16 leading-relaxed">
+      <p
+        class="text-xl lg:text-2xl text-center text-gray-700 px-4 md:px-12 lg:px-24 mb-16 leading-relaxed"
+      >
         {{ t('about.intro') }}
       </p>
 
       <!-- Grid Histoire | Mission | Vision -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
-        
         <!-- Histoire -->
         <div
           :class="[
             'bg-gray-50 p-8 rounded-xl border border-gray-200 transition-all duration-500 hover:shadow-xl hover:-translate-y-2',
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10',
           ]"
           style="transition-delay: 0s"
         >
@@ -78,7 +78,7 @@ onMounted(() => {
         <div
           :class="[
             'bg-gray-50 p-8 rounded-xl border border-gray-200 transition-all duration-500 hover:shadow-xl hover:-translate-y-2',
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10',
           ]"
           style="transition-delay: 0.2s"
         >
@@ -99,7 +99,7 @@ onMounted(() => {
         <div
           :class="[
             'bg-gray-50 p-8 rounded-xl border border-gray-200 transition-all duration-500 hover:shadow-xl hover:-translate-y-2',
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10',
           ]"
           style="transition-delay: 0.4s"
         >
@@ -115,66 +115,66 @@ onMounted(() => {
             {{ t('about.vision_text') }}
           </p>
         </div>
-
       </div>
 
       <!-- Presencia Regional con mapa África de fondo -->
       <div class="relative max-w-4xl mx-auto py-16 overflow-hidden">
-        
         <!-- Mapa África de fondo (naranja difuminado) -->
         <!-- Mapa África de fondo (versión simplificada) -->
-<div class="absolute inset-0 flex items-center justify-center opacity-20 pointer-events-none">
-  <img 
-  src="https://res.cloudinary.com/dy1pkrd52/image/upload/v1759589683/simplified-political-map-africa-vector-4234592_w2s69w.webp" 
-  alt="" 
-  class="w-full max-w-md object-contain"
-  style="filter: sepia(100%) saturate(500%) hue-rotate(330deg) brightness(1.2);"
-/>
-</div>
+        <div
+          class="absolute inset-0 flex items-center justify-center opacity-20 pointer-events-none"
+        >
+          <img
+            src="https://res.cloudinary.com/dy1pkrd52/image/upload/v1759589683/simplified-political-map-africa-vector-4234592_w2s69w.webp"
+            alt=""
+            class="w-full max-w-md object-contain"
+            style="filter: sepia(100%) saturate(500%) hue-rotate(330deg) brightness(1.2)"
+          />
+        </div>
 
         <!-- Contenido -->
         <div class="relative z-10 text-center">
           <h3 class="text-3xl font-bold text-[#003366] mb-8">
             {{ t('about.presence_title') }}
           </h3>
-          
+
           <!-- Badges países -->
           <div class="flex flex-wrap justify-center gap-4">
-            <span 
+            <span
               :class="[
                 'px-6 py-3 rounded-full font-semibold shadow-md transition-all duration-300',
-                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4',
               ]"
               style="transition-delay: 0.5s"
               class="bg-[#FF6B35] text-white"
             >
               {{ t('about.countries.guinea') }} <span class="text-sm opacity-90">(Sede)</span>
             </span>
-            
-            <span 
+
+            <span
               :class="[
                 'px-6 py-3 rounded-full font-semibold border-2 border-[#003366] bg-white text-[#003366] hover:bg-[#003366] hover:text-white transition-all duration-300',
-                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4',
               ]"
               style="transition-delay: 0.6s"
             >
               {{ t('about.countries.cameroon') }}
             </span>
-            
-            <span 
+
+            <span
               :class="[
                 'px-6 py-3 rounded-full font-semibold border-2 border-[#003366] bg-white text-[#003366] hover:bg-[#003366] hover:text-white transition-all duration-300',
-                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4',
               ]"
               style="transition-delay: 0.7s"
             >
               {{ t('about.countries.congo') }}
             </span>
-            
-            <span 
+
+            <span
               :class="[
                 'px-6 py-3 rounded-full font-semibold border-2 border-[#003366] bg-white text-[#003366] hover:bg-[#003366] hover:text-white transition-all duration-300',
-                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4',
               ]"
               style="transition-delay: 0.8s"
             >
@@ -183,7 +183,6 @@ onMounted(() => {
           </div>
         </div>
       </div>
-
     </div>
   </section>
 </template>

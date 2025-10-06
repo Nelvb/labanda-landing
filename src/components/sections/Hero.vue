@@ -1,15 +1,17 @@
 <script setup lang="ts">
 /**
  * Hero.vue — Sección Hero con parallax y gradiente overlay
- * Contexto: Landing principal con imagen Plan Urbanístico Evinayong
- * Notas: Parallax effect en background-attachment, gradiente navy → transparente
+ * Contexto: Landing principal con imagen Plan Urbanístico Evinayong.
+ * Notas: Parallax effect con gradiente navy → transparente.
+ * Botones en fila en tablet/desktop, columna solo en móvil.
  * @author Nelson Valero
- * @since v1.0.0
+ * @since v1.2.0
  */
 
 defineOptions({
-  name: 'HomeHero'
+  name: 'HomeHero',
 })
+
 import { useI18n } from 'vue-i18n'
 import Button from '@/components/ui/Button.vue'
 
@@ -27,7 +29,9 @@ const scrollToSection = (sectionId: string) => {
   <section
     id="accueil"
     class="relative min-h-screen flex items-center bg-cover bg-center bg-fixed"
-    style="background-image: url('https://res.cloudinary.com/dy1pkrd52/image/upload/v1759531027/plan_urbanistico_evinayong_vxwnkj.webp')"
+    style="
+      background-image: url('https://res.cloudinary.com/dy1pkrd52/image/upload/v1759531027/plan_urbanistico_evinayong_vxwnkj.webp');
+    "
   >
     <!-- Overlay con gradiente -->
     <div
@@ -35,31 +39,38 @@ const scrollToSection = (sectionId: string) => {
     ></div>
 
     <!-- Contenido -->
-    <div class="container mx-auto px-6 relative z-10 text-white">
+    <div
+      class="container mx-auto px-6 relative z-10 text-white flex flex-col items-center text-center md:items-center md:text-center lg:items-start lg:text-left"
+    >
       <div class="max-w-3xl">
         <!-- Título principal -->
-        <h1 class="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
+        <h1 class="text-4xl sm:text-5xl lg:text-7xl font-bold mb-6 leading-tight">
           {{ t('hero.title') }}
         </h1>
 
         <!-- Subtítulo -->
-        <p class="text-xl lg:text-2xl mb-8 text-white font-semibold leading-relaxed drop-shadow-lg">
+        <p
+          class="text-lg sm:text-xl lg:text-2xl mb-8 text-white font-semibold leading-relaxed drop-shadow-lg"
+        >
           {{ t('hero.subtitle') }}
         </p>
 
         <!-- CTAs con componente Button -->
-        <div class="flex flex-wrap gap-4">
-          <Button variant="primary" @click="scrollToSection('projets')">
+        <div
+          class="flex flex-col gap-4 justify-center items-center sm:flex-row sm:justify-center md:justify-center lg:justify-start"
+        >
+          <Button variant="primary" @click="scrollToSection('projects')" class="w-full sm:w-auto">
             {{ t('hero.cta_primary') }}
           </Button>
-          <Button variant="outline" @click="scrollToSection('contact')">
+
+          <Button variant="outline" @click="scrollToSection('contact')" class="w-full sm:w-auto">
             {{ t('hero.cta_secondary') }}
           </Button>
         </div>
       </div>
     </div>
 
-    <!-- Scroll indicator -->
+    <!-- Indicador scroll -->
     <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
       <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path
@@ -72,3 +83,8 @@ const scrollToSection = (sectionId: string) => {
     </div>
   </section>
 </template>
+<style scoped>
+section {
+  scroll-margin-top: 80px;
+}
+</style>

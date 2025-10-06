@@ -1,29 +1,38 @@
 <!--
  * FAQ.vue — Sección de Preguntas Frecuentes (accordion)
- * Diseño elegante, corporativo y responsive
- * Colores: azul #003366 y naranja #FF6B35
- * Carga dinámica según idioma actual (vue-i18n)
- * Autor: Nelson Valero
- * @since v1.0.0
+ * Diseño corporativo LABANDA (#003366 / #FF6B35)
+ * Multidioma reactivo (ES/FR/EN) con vue-i18n
 -->
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, computed, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
+
 import faqDataEs from './faqData.es'
 import faqDataEn from './faqData.en'
 import faqDataFr from './faqData.fr'
 
-const { locale } = useI18n()
+type FaqItem = { question: string; answer: string }
 
-const allFaqs = {
+const { locale, t } = useI18n()
+
+const allFaqs: Record<string, FaqItem[]> = {
   es: faqDataEs,
   en: faqDataEn,
   fr: faqDataFr,
 }
 
-const faqs = allFaqs[locale.value as keyof typeof allFaqs] || faqDataEs
+// Reactivo: cambia al instante al cambiar el idioma
+const faqs = computed<FaqItem[]>(() => allFaqs[locale.value] || faqDataEs)
+
+// Cerrar abiertos cuando cambie el idioma
 const activeIndex = ref<number | null>(null)
+watch(
+  () => locale.value,
+  () => {
+    activeIndex.value = null
+  },
+)
 
 const toggle = (index: number) => {
   activeIndex.value = activeIndex.value === index ? null : index
@@ -36,10 +45,10 @@ const toggle = (index: number) => {
       <!-- Encabezado -->
       <div class="text-center mb-12">
         <h2 class="text-4xl md:text-5xl font-bold text-[#003366] mb-4">
-          {{ $t('faq.title') }}
+          {{ t('faq.title') }}
         </h2>
         <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-          {{ $t('faq.subtitle') }}
+          {{ t('faq.subtitle') }}
         </p>
       </div>
 
@@ -47,11 +56,13 @@ const toggle = (index: number) => {
       <div class="space-y-4">
         <div
           v-for="(item, index) in faqs"
-          :key="index"
+          :key="`${locale}-${index}`"
           class="border border-gray-200 bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300"
         >
           <button
             class="w-full flex justify-between items-center text-left px-6 py-5 focus:outline-none"
+            :aria-expanded="activeIndex === index"
+            :aria-controls="`faq-panel-${index}`"
             @click="toggle(index)"
           >
             <h3
@@ -70,6 +81,7 @@ const toggle = (index: number) => {
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
+              aria-hidden="true"
             >
               <path
                 stroke-linecap="round"
@@ -83,6 +95,7 @@ const toggle = (index: number) => {
           <transition name="accordion">
             <div
               v-if="activeIndex === index"
+              :id="`faq-panel-${index}`"
               class="px-6 pb-6 text-gray-700 text-base md:text-lg leading-relaxed border-t border-gray-100 bg-[#FF6B35]/5"
             >
               {{ item.answer }}

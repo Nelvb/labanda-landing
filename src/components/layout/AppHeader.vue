@@ -4,12 +4,12 @@
  * Navbar sticky profesional con transiciones, i18n (es/fr/en),
  * menú lateral móvil y estructura modular.
  * Se apoya en NavbarLinks.vue y MobileMenu.vue.
- * @since v1.1.0
+ * @since v1.2.0
+ * @updated Octubre 2025 - Logo con scroll al inicio.
  * @autor Nelson Valero
 -->
 
 <script setup lang="ts">
-// Component name: AppHeader
 import { ref, onMounted, onUnmounted } from 'vue'
 import NavbarLinks from './NavbarLinks.vue'
 import MobileMenu from './MobileMenu.vue'
@@ -27,9 +27,8 @@ const handleScroll = () => {
 const scrollToSection = (sectionId: string) => {
   const el = document.getElementById(sectionId)
   if (el) el.scrollIntoView({ behavior: 'smooth' })
+  else window.scrollTo({ top: 0, behavior: 'smooth' }) // fallback si no existe la sección
 }
-
-
 
 onMounted(() => window.addEventListener('scroll', handleScroll))
 onUnmounted(() => window.removeEventListener('scroll', handleScroll))
@@ -39,16 +38,17 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
   <header
     :class="[
       'fixed top-0 w-full z-50 transition-all duration-300',
-      isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
+      isScrolled ? 'bg-white shadow-md' : 'bg-transparent',
     ]"
   >
     <div class="container mx-auto px-4 sm:px-6 py-3 sm:py-4 flex justify-between items-center">
-      <!-- LOGO -->
+      <!-- LOGO (clickable) -->
       <img
         src="https://res.cloudinary.com/dy1pkrd52/image/upload/v1759502179/Logo__1_-removebg-preview_a1jzff.png"
         alt="LABANDA Industrie Services"
-        class="h-16 sm:h-20 lg:h-22 w-auto transition-all duration-300"
+        class="h-16 sm:h-20 lg:h-22 w-auto transition-all duration-300 cursor-pointer"
         :class="isScrolled ? '' : 'brightness-0 invert'"
+        @click="scrollToSection('accueil')"
       />
 
       <!-- NAV LINKS (escritorio) -->

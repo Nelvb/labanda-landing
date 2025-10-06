@@ -4,7 +4,7 @@
         "about": "Sobre nosotros",
         "services": "Servicios",
         "projects": "Proyectos",
-        "references": "Referencias",
+        "faq": "FAQ",
         "contact": "Contacto"
     },
     "hero": {
@@ -20,7 +20,7 @@
     },
     "about": {
         "title": "Sobre LABANDA",
-        "intro": "LABANDA Industrie Services apoya a gobiernos e instituciones en la ejecución de grandes proyectos: catedrales, planificación urbana, universidades e infraestructuras sostenibles.",
+        "intro": "LABANDA Industrie Services nace en 2017 en Guinea Ecuatorial, fruto del trabajo y la colaboración de un equipo de profesionales con más de 30 años de experiencia internacional en arquitectura, urbanismo e infraestructuras. Comprometida con el desarrollo urbano sostenible, el respeto a la cultura local y una metodología personalizada en cada proyecto, LABANDA se distingue por ser una empresa ágil y dinámica, capaz de ofrecer soluciones únicas donde el cliente forma parte activa del equipo.",
         "history_title": "Nuestra Historia",
         "history_text": "Fundada con la visión de contribuir al desarrollo sostenible de África Central, LABANDA Industrie Services se ha consolidado como un socio de confianza para proyectos institucionales.",
         "mission_title": "Nuestra Misión",

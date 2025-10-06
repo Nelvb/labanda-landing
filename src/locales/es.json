@@ -96,5 +96,49 @@
         "cookies_policy": "Política de Cookies",
         "contact_title": "Contacto",
         "made_by": "Diseñado y desarrollado por"
+    },
+    "cookies": {
+        "banner": {
+            "title": "Configuración de cookies",
+            "text": "Utilizamos cookies para mejorar tu experiencia y analizar el uso del sitio.",
+            "more_info": "Más información"
+        },
+        "actions": {
+            "configure": "Configurar",
+            "necessary_only": "Solo necesarias",
+            "accept_all": "Aceptar todo"
+        },
+        "modal": {
+            "title": "Preferencias de Cookies",
+            "intro": "Elige qué tipos de cookies deseas permitir. Las cookies necesarias siempre están activas porque son esenciales para el funcionamiento del sitio.",
+            "more_info_title": "Más información:",
+            "necessary_details": "Permiten funciones básicas como la navegación y el acceso seguro a las áreas protegidas."
+        },
+        "categories": {
+            "necessary": {
+                "title": "Cookies necesarias",
+                "desc": "Esenciales para el funcionamiento del sitio web (seguridad, sesión, preferencias básicas).",
+                "details": "Permiten funciones básicas como la navegación y el acceso seguro a las áreas protegidas."
+            },
+            "analytics": {
+                "title": "Cookies analíticas",
+                "desc": "Nos ayudan a comprender cómo los visitantes usan el sitio (uso anónimo).",
+                "item": "Google Analytics (uso anónimo)"
+            },
+            "functional": {
+                "title": "Cookies funcionales",
+                "desc": "Mejoran la funcionalidad y personalización (p. ej., idioma o preferencias de interfaz).",
+                "item": "Preferencias de idioma o diseño"
+            }
+        },
+        "links": {
+            "privacy_policy": "Política de Privacidad",
+            "cookies_policy": "Política de Cookies"
+        },
+        "buttons": {
+            "cancel": "Cancelar",
+            "save": "Guardar preferencias",
+            "accept_all": "Aceptar todo"
+        }
     }
 }

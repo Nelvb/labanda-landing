@@ -30,7 +30,7 @@ const handleBackdropClick = (e: MouseEvent) => {
     >
       <!-- Header -->
       <div class="bg-[#003366] text-white p-6 flex items-center justify-between">
-        <h2 class="text-lg font-semibold">Configuración de Cookies</h2>
+        <h2 class="text-lg font-semibold">{{ $t('cookies.modal.title') }}</h2>
         <button
           @click="closeModal"
           class="text-white/80 hover:text-white text-xl font-bold leading-none"
@@ -42,33 +42,36 @@ const handleBackdropClick = (e: MouseEvent) => {
       <!-- Contenido -->
       <div class="p-6 space-y-5 overflow-y-auto max-h-[60vh] text-gray-700">
         <p class="text-sm">
-          Usamos cookies para mejorar tu experiencia de navegación y analizar el uso de nuestro
-          sitio. Puedes personalizar tus preferencias a continuación.
+          {{ $t('cookies.modal.intro') }}
         </p>
 
         <!-- Necesarias -->
         <div class="border border-gray-200 rounded-lg overflow-hidden">
           <div class="bg-gray-50 px-4 py-3 border-b border-gray-200">
-            <h3 class="font-semibold text-[#003366]">Cookies necesarias</h3>
+            <h3 class="font-semibold text-[#003366]">
+              {{ $t('cookies.categories.necessary.title') }}
+            </h3>
             <p class="text-xs text-gray-600">
-              Son esenciales para el funcionamiento del sitio web y no se pueden desactivar.
+              {{ $t('cookies.categories.necessary.desc') }}
             </p>
           </div>
           <div class="px-4 py-3 text-sm text-gray-700">
-            Permiten funciones básicas como la navegación y el acceso seguro a las áreas protegidas.
+            {{ $t('cookies.categories.necessary.details') }}
           </div>
         </div>
 
         <!-- Analíticas -->
         <div class="border border-gray-200 rounded-lg overflow-hidden">
           <div class="bg-gray-50 px-4 py-3 border-b border-gray-200">
-            <h3 class="font-semibold text-[#003366]">Cookies analíticas</h3>
+            <h3 class="font-semibold text-[#003366]">
+              {{ $t('cookies.categories.analytics.title') }}
+            </h3>
             <p class="text-xs text-gray-600">
-              Nos ayudan a comprender cómo los visitantes usan nuestro sitio.
+              {{ $t('cookies.categories.analytics.desc') }}
             </p>
           </div>
           <div class="flex items-center justify-between px-4 py-3">
-            <p class="text-sm">Google Analytics (uso anónimo)</p>
+            <p class="text-sm">{{ $t('cookies.categories.analytics.item') }}</p>
             <input
               type="checkbox"
               :checked="preferences.analytics"
@@ -81,13 +84,15 @@ const handleBackdropClick = (e: MouseEvent) => {
         <!-- Funcionales -->
         <div class="border border-gray-200 rounded-lg overflow-hidden">
           <div class="bg-gray-50 px-4 py-3 border-b border-gray-200">
-            <h3 class="font-semibold text-[#003366]">Cookies funcionales</h3>
+            <h3 class="font-semibold text-[#003366]">
+              {{ $t('cookies.categories.functional.title') }}
+            </h3>
             <p class="text-xs text-gray-600">
-              Mejoran la funcionalidad y personalización del sitio.
+              {{ $t('cookies.categories.functional.desc') }}
             </p>
           </div>
           <div class="flex items-center justify-between px-4 py-3">
-            <p class="text-sm">Preferencias de idioma o diseño</p>
+            <p class="text-sm">{{ $t('cookies.categories.functional.item') }}</p>
             <input
               type="checkbox"
               :checked="preferences.functional"
@@ -99,15 +104,15 @@ const handleBackdropClick = (e: MouseEvent) => {
 
         <!-- Enlaces -->
         <div class="bg-gray-50 rounded-lg p-4 text-sm">
-          <p class="mb-2 text-[#003366] font-medium">Más información:</p>
+          <p class="mb-2 text-[#003366] font-medium">{{ $t('cookies.modal.more_info_title') }}</p>
           <ul class="space-y-1">
             <li>
               <a
-                href="/legal/politica-privacidad"
+                href="/legal/privacy"
                 target="_blank"
                 class="text-[#003366] hover:text-[#FF6B35] underline transition-colors"
               >
-                Política de Privacidad
+                {{ $t('cookies.links.privacy_policy') }}
               </a>
             </li>
             <li>
@@ -116,7 +121,7 @@ const handleBackdropClick = (e: MouseEvent) => {
                 target="_blank"
                 class="text-[#003366] hover:text-[#FF6B35] underline transition-colors"
               >
-                Política de Cookies
+                {{ $t('cookies.links.cookies_policy') }}
               </a>
             </li>
           </ul>
@@ -131,21 +136,21 @@ const handleBackdropClick = (e: MouseEvent) => {
           @click="closeModal"
           class="px-4 py-2 rounded-md border border-gray-300 text-gray-700 hover:bg-gray-100 transition-colors"
         >
-          Cancelar
+          {{ $t('cookies.buttons.cancel') }}
         </button>
 
         <button
           @click="acceptAll"
           class="px-4 py-2 rounded-md bg-[#003366] text-white hover:bg-[#FF6B35] transition-colors"
         >
-          Aceptar todas
+          {{ $t('cookies.buttons.accept_all') }}
         </button>
 
         <button
           @click="saveModalPreferences"
           class="px-4 py-2 rounded-md border border-[#003366] text-[#003366] hover:bg-[#003366] hover:text-white transition-colors"
         >
-          Guardar preferencias
+          {{ $t('cookies.buttons.save') }}
         </button>
       </div>
     </div>

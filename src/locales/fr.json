@@ -96,5 +96,49 @@
         "cookies_policy": "Politique de cookies",
         "contact_title": "Contact",
         "made_by": "Conçu et développé par"
+    },
+    "cookies": {
+        "banner": {
+            "title": "Paramètres des cookies",
+            "text": "Nous utilisons des cookies pour améliorer votre expérience et analyser l'utilisation du site.",
+            "more_info": "Plus d'informations"
+        },
+        "actions": {
+            "configure": "Configurer",
+            "necessary_only": "Uniquement nécessaires",
+            "accept_all": "Tout accepter"
+        },
+        "modal": {
+            "title": "Préférences de Cookies",
+            "intro": "Choisissez les types de cookies que vous souhaitez autoriser. Les cookies nécessaires sont toujours activés car essentiels au fonctionnement du site.",
+            "more_info_title": "Plus d'informations:",
+            "necessary_details": "Permettent des fonctions de base comme la navigation et l'accès sécurisé aux zones protégées."
+        },
+        "categories": {
+            "necessary": {
+                "title": "Cookies nécessaires",
+                "desc": "Essentiels au fonctionnement du site (sécurité, session, préférences de base).",
+                "details": "Permettent des fonctions de base comme la navigation et l'accès sécurisé aux zones protégées."
+            },
+            "analytics": {
+                "title": "Cookies d'analyse",
+                "desc": "Aident à comprendre comment les visiteurs utilisent le site (utilisation anonyme).",
+                "item": "Google Analytics (anonyme)"
+            },
+            "functional": {
+                "title": "Cookies fonctionnels",
+                "desc": "Améliorent la fonctionnalité et la personnalisation (ex. langue ou préférences d'interface).",
+                "item": "Préférences de langue ou de design"
+            }
+        },
+        "links": {
+            "privacy_policy": "Politique de confidentialité",
+            "cookies_policy": "Politique de cookies"
+        },
+        "buttons": {
+            "cancel": "Annuler",
+            "save": "Enregistrer les préférences",
+            "accept_all": "Tout accepter"
+        }
     }
 }

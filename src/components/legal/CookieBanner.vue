@@ -30,11 +30,11 @@ const { isVisible, acceptAll, acceptNecessary, openModal } = useCookieConsent()
             <Cookie class="w-5 h-5 text-[#FF6B35]" />
           </div>
           <div>
-            <p class="font-semibold text-sm md:text-base">Configuración de Cookies</p>
+            <p class="font-semibold text-sm md:text-base">{{ $t('cookies.banner.title') }}</p>
             <p class="text-sm text-gray-200 leading-snug">
-              Utilizamos cookies para mejorar tu experiencia y analizar el uso del sitio.
+              {{ $t('cookies.banner.text') }}
               <a href="/legal/cookies" class="text-[#FF6B35] hover:underline ml-1">
-                Más información </a
+                {{ $t('cookies.banner.more_info') }}</a
               >.
             </p>
           </div>
@@ -49,7 +49,7 @@ const { isVisible, acceptAll, acceptNecessary, openModal } = useCookieConsent()
             class="border-white/30 text-white hover:bg-white hover:text-[#003366] transition-all"
             @click="openModal"
           >
-            <Settings class="w-4 h-4 mr-2" /> Configurar
+            <Settings class="w-4 h-4 mr-2" /> {{ $t('cookies.actions.configure') }}
           </Button>
 
           <Button
@@ -59,7 +59,7 @@ const { isVisible, acceptAll, acceptNecessary, openModal } = useCookieConsent()
             class="text-gray-200 hover:text-white hover:bg-white/10"
             @click="acceptNecessary"
           >
-            Solo necesarias
+            {{ $t('cookies.actions.necessary_only') }}
           </Button>
 
           <Button
@@ -69,7 +69,7 @@ const { isVisible, acceptAll, acceptNecessary, openModal } = useCookieConsent()
             class="bg-[#FF6B35] hover:bg-white hover:text-[#003366] transition-all"
             @click="acceptAll"
           >
-            Aceptar todo
+            {{ $t('cookies.actions.accept_all') }}
           </Button>
         </div>
       </div>

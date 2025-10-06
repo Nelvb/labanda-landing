@@ -2,8 +2,7 @@
  * useCookieConsent.ts
  *
  * Hook global de gestión de consentimiento de cookies para LABANDA Industrie Services.
- * Implementa persistencia en localStorage y lógica RGPD.
- * Controla visibilidad del banner, preferencias y modal de configuración.
+ * Cumple RGPD con persistencia en localStorage y control de modal.
  */
 
 import { ref, onMounted } from 'vue'
@@ -82,22 +81,10 @@ const updatePreference = (key: keyof CookiePreferences, value: boolean) => {
 }
 
 /**
- * Abre el modal de configuración avanzada
+ * Modal de configuración avanzada
  */
-const openModal = () => {
-    showModal.value = true
-}
-
-/**
- * Cierra el modal
- */
-const closeModal = () => {
-    showModal.value = false
-}
-
-/**
- * Guarda la configuración personalizada desde el modal
- */
+const openModal = () => (showModal.value = true)
+const closeModal = () => (showModal.value = false)
 const saveModalPreferences = () => {
     savePreferences(preferences.value)
     isVisible.value = false
@@ -105,23 +92,22 @@ const saveModalPreferences = () => {
 }
 
 /**
- * Inicializa en el montaje de la app
+ * Hook exportado — inicializa correctamente dentro de un componente
  */
-onMounted(() => {
-    initConsent()
-})
+export const useCookieConsent = () => {
+    onMounted(() => {
+        initConsent()
+    })
 
-/**
- * Hook exportado — utilizable desde cualquier componente
- */
-export const useCookieConsent = () => ({
-    isVisible,
-    showModal,
-    preferences,
-    acceptNecessary,
-    acceptAll,
-    openModal,
-    closeModal,
-    saveModalPreferences,
-    updatePreference,
-})
+    return {
+        isVisible,
+        showModal,
+        preferences,
+        acceptNecessary,
+        acceptAll,
+        openModal,
+        closeModal,
+        saveModalPreferences,
+        updatePreference,
+    }
+}

@@ -24,9 +24,10 @@ const { openModal, isVisible } = useCookieConsent()
       :aria-label="$t('cookies.actions.configure')"
     >
       <Cookie class="w-5 h-5 flex-shrink-0" />
-      <span class="text-sm font-medium whitespace-nowrap">{{
-        $t('cookies.actions.configure')
-      }}</span>
+      <!-- Mostrar texto solo en pantallas grandes -->
+      <span class="hidden lg:inline text-sm font-medium whitespace-nowrap">
+        {{ $t('cookies.actions.configure') }}
+      </span>
     </button>
   </transition>
 </template>

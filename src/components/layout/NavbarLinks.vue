@@ -22,7 +22,7 @@ const props = defineProps<{
 <template>
   <div class="hidden lg:flex items-center space-x-8">
     <button
-      @click="props.scrollToSection('accueil')"
+      @click="props.scrollToSection('hero')"
       :class="[
         'font-semibold text-lg hover:text-[#FF6B35] transition',
         props.isScrolled ? 'text-[#003366]' : 'text-white',

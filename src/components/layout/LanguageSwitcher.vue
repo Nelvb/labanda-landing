@@ -6,7 +6,7 @@
  * Colores corporativos: azul oscuro (#003366) y naranja (#FF6B35)
  * Reutilizable en Header y MobileMenu
  *
- * @since v1.0.0
+ * @since v1.1.0
  * @author Nelson Valero
 -->
 
@@ -17,10 +17,11 @@ const { locale } = useI18n()
 
 /**
  * Cambia el idioma actual y lo guarda en localStorage
+ * Compatible con la configuración persistente de i18n.ts
  */
-const switchLanguage = (lang: string) => {
+const switchLanguage = (lang: 'es' | 'fr' | 'en') => {
   locale.value = lang
-  localStorage.setItem('preferredLanguage', lang)
+  localStorage.setItem('lang', lang)
 }
 </script>
 
@@ -31,12 +32,12 @@ const switchLanguage = (lang: string) => {
     <button
       v-for="lang in ['es', 'fr', 'en']"
       :key="lang"
-      @click="switchLanguage(lang)"
+      @click="switchLanguage(lang as 'es' | 'fr' | 'en')"
       :class="[
         'px-3 py-1.5 rounded font-semibold text-sm md:text-base transition-all duration-200',
         locale === lang
           ? 'bg-[#FF6B35] text-white shadow-sm'
-          : 'text-[#003366] hover:bg-gray-100 hover:text-[#FF6B35]'
+          : 'text-[#003366] hover:bg-gray-100 hover:text-[#FF6B35]',
       ]"
     >
       {{ lang.toUpperCase() }}

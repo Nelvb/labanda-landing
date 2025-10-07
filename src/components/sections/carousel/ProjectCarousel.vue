@@ -4,10 +4,12 @@
  * Usa Swiper.js para navegación táctil fluida
  * Muestra imagen full-height (60%) + info proyecto (40%)
  * Responsive: stack vertical en mobile sin scroll
- * @author Nelson Valero
- * @since v1.0.0
+ * Idiomas: español base, gestionado por vue-i18n
+ * @since v1.0.2
+ * @autor Nelson Valero
  */
 
+import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules'
@@ -16,14 +18,16 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/effect-fade'
 
-// Import projects data
+// Importa datos de proyectos (con traducciones {es, fr, en})
 import projectsData from '@/data/projects.json'
 
-const { locale } = useI18n()
+// Locale actual con tipado seguro
+const { locale } = useI18n<{ locale: 'es' | 'fr' | 'en' }>()
+const currentLocale = computed(() => locale.value as 'es' | 'fr' | 'en')
 
+// Configuración del Swiper
 const modules = [Navigation, Pagination, Autoplay, EffectFade]
 
-// Swiper configuration
 const swiperOptions = {
   modules,
   spaceBetween: 0,
@@ -40,10 +44,7 @@ const swiperOptions = {
   },
   navigation: true,
   effect: 'fade',
-  fadeEffect: {
-    crossFade: true,
-  },
-  // CRÍTICO: Habilitar gestos táctiles
+  fadeEffect: { crossFade: true },
   touchRatio: 1,
   touchAngle: 45,
   simulateTouch: true,
@@ -65,7 +66,7 @@ const swiperOptions = {
             <!-- Image -->
             <img
               :src="project.image"
-              :alt="locale === 'fr' ? project.title.fr : project.title.en"
+              :alt="project.title[currentLocale]"
               class="absolute inset-0 w-full h-full object-cover"
               loading="lazy"
             />
@@ -86,7 +87,7 @@ const swiperOptions = {
                   <span
                     class="inline-block px-3 py-1 lg:px-4 lg:py-2 bg-[#FF6B35]/10 text-[#FF6B35] text-xs lg:text-sm font-semibold rounded-full uppercase tracking-wide"
                   >
-                    {{ locale === 'fr' ? project.category.fr : project.category.en }}
+                    {{ project.category[currentLocale] }}
                   </span>
                 </div>
 
@@ -94,7 +95,7 @@ const swiperOptions = {
                 <h3
                   class="text-xl lg:text-3xl xl:text-4xl font-bold text-[#003366] mb-1 lg:mb-3 text-center lg:text-left"
                 >
-                  {{ locale === 'fr' ? project.title.fr : project.title.en }}
+                  {{ project.title[currentLocale] }}
                 </h3>
 
                 <!-- Location & Year -->
@@ -122,9 +123,9 @@ const swiperOptions = {
                         d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                       />
                     </svg>
-                    <span class="text-xs lg:text-sm">{{
-                      locale === 'fr' ? project.location.fr : project.location.en
-                    }}</span>
+                    <span class="text-xs lg:text-sm">
+                      {{ project.location[currentLocale] }}
+                    </span>
                   </div>
 
                   <div class="flex items-center gap-1.5">
@@ -150,7 +151,7 @@ const swiperOptions = {
                 <p
                   class="text-xs lg:text-base text-gray-700 leading-tight lg:leading-relaxed mb-3 lg:mb-8 line-clamp-3 lg:line-clamp-none text-center lg:text-left"
                 >
-                  {{ locale === 'fr' ? project.description.fr : project.description.en }}
+                  {{ project.description[currentLocale] }}
                 </p>
 
                 <!-- Stats -->
@@ -162,7 +163,7 @@ const swiperOptions = {
                     <div
                       class="text-[9px] lg:text-xs text-gray-500 uppercase tracking-wide leading-tight"
                     >
-                      {{ locale === 'fr' ? stat.label.fr : stat.label.en }}
+                      {{ stat.label[currentLocale] }}
                     </div>
                   </div>
                 </div>
@@ -246,7 +247,7 @@ const swiperOptions = {
 /* TABLET & MÓVIL: Dots encima del texto */
 @media (max-width: 1023px) {
   :deep(.swiper-pagination) {
-    bottom: 50% !important; /* Encima del texto */
+    bottom: 50% !important;
     padding-bottom: 6px;
   }
 }
@@ -254,7 +255,7 @@ const swiperOptions = {
 :deep(.swiper-pagination-bullet) {
   width: 14px;
   height: 14px;
-  background: rgba(255, 255, 255, 0.7); /* Desktop */
+  background: rgba(255, 255, 255, 0.7);
   opacity: 1;
   margin: 0 6px !important;
   transition: all 0.3s ease;
@@ -264,7 +265,7 @@ const swiperOptions = {
 /* TABLET & MÓVIL: Dots más oscuros */
 @media (max-width: 1023px) {
   :deep(.swiper-pagination-bullet) {
-    background: rgba(255, 255, 255, 0.5); /* Más oscuro en móvil/tablet */
+    background: rgba(255, 255, 255, 0.5);
   }
 }
 

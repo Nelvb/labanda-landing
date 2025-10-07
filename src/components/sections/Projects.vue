@@ -9,7 +9,7 @@
  */
 
 defineOptions({
-  name: 'CompanyProjects'
+  name: 'CompanyProjects',
 })
 
 import { useI18n } from 'vue-i18n'
@@ -19,7 +19,7 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <section id="projects" class="w-full bg-gray-50 py-12 md:py-16">
+  <section id="projects" class="w-full bg-white py-12 md:py-16">
     <!-- Section Header -->
     <div class="max-w-7xl mx-auto px-6 mb-12 text-center">
       <h2 class="text-4xl md:text-5xl font-bold text-[#003366] mb-4">

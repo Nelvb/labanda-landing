@@ -40,7 +40,7 @@ const toggle = (index: number) => {
 </script>
 
 <template>
-  <section id="faq" class="bg-gray-50 py-16 md:py-20">
+  <section id="faq" class="bg-[#F8FBFD] py-16 md:py-20">
     <div class="max-w-6xl mx-auto px-6">
       <!-- Encabezado -->
       <div class="text-center mb-12">

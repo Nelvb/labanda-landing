@@ -31,8 +31,9 @@
         "countries": {
             "guinea": "Guinée Équatoriale",
             "cameroon": "Cameroun",
-            "congo": "Congo Brazzaville",
-            "chad": "Tchad"
+            "saotome": "Sao Tomé-et-Principe",
+            "angola": "Angola",
+            "dakar": "Dakar (Sénégal)"
         }
     },
     "services": {

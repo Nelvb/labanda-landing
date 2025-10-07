@@ -160,7 +160,7 @@ const services = [
 <template>
   <section id="services" class="w-full pb-12 md:pb-16">
     <!-- Section Header -->
-    <div class="bg-white py-12 md:py-16 px-6 text-center">
+    <div class="bg-[#F8FBFD] py-12 md:py-16 px-6 text-center">
       <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#003366] mb-4">
         {{ t('services.title') }}
       </h2>
@@ -299,7 +299,7 @@ const services = [
         <!-- Separator (only if not last service) -->
         <div
           v-if="index < services.length - 1"
-          class="flex items-center justify-center py-12 md:py-20 bg-white"
+          class="flex items-center justify-center py-12 md:py-20 bg-[#F8FBFD]"
         >
           <div class="flex items-center gap-2 md:gap-3">
             <!-- Left line -->

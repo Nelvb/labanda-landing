@@ -11,6 +11,7 @@ import AppFooter from '@/components/layout/AppFooter.vue'
 import CookieBanner from '@/components/legal/CookieBanner.vue'
 import CookieModal from '@/components/legal/CookieModal.vue'
 import CookieToggle from '@/components/legal/CookieToggle.vue'
+import Loader from '@/components/ui/Loader.vue'
 
 const route = useRoute()
 
@@ -20,6 +21,9 @@ const hideHeaderRoutes = ['/legal/cookies', '/legal/privacy', '/legal/legal-noti
 
 <template>
   <div class="flex flex-col min-h-screen bg-white text-gray-800">
+    <!-- Loader de carga inicial -->
+    <Loader />
+    
     <!-- Header solo si no es página legal -->
     <AppHeader v-if="!hideHeaderRoutes.includes(route.path)" />
 

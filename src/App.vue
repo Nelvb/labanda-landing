@@ -11,6 +11,7 @@ import AppFooter from '@/components/layout/AppFooter.vue'
 import CookieBanner from '@/components/legal/CookieBanner.vue'
 import CookieModal from '@/components/legal/CookieModal.vue'
 import CookieToggle from '@/components/legal/CookieToggle.vue'
+import ScrollIndicator from '@/components/ui/ScrollIndicator.vue'
 import Loader from '@/components/ui/Loader.vue'
 
 const route = useRoute()
@@ -39,5 +40,6 @@ const hideHeaderRoutes = ['/legal/cookies', '/legal/privacy', '/legal/legal-noti
     <CookieBanner />
     <CookieModal />
     <CookieToggle />
+    <ScrollIndicator />
   </div>
 </template>

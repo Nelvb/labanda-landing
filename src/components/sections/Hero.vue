@@ -69,26 +69,6 @@ const scrollToSection = (sectionId: string) => {
         </div>
       </div>
     </div>
-
-    <!-- Indicador scroll (centrado y con color corporativo) -->
-<div
-  class="absolute inset-x-0 bottom-6 flex justify-center animate-bounce"
->
-  <svg
-    class="w-7 h-7 text-[#FF6B35]"
-    fill="none"
-    stroke="currentColor"
-    stroke-width="2.5"
-    viewBox="0 0 24 24"
-  >
-    <path
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      d="M19 14l-7 7-7-7M12 21V3"
-    />
-  </svg>
-</div>
-
   </section>
 </template>
 <style scoped>

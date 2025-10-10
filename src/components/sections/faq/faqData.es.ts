@@ -3,12 +3,12 @@ export default [
     {
         question: '¿Qué es LABANDA Industrie Services?',
         answer:
-            'LABANDA Industrie Services es una empresa con más de 30 años de experiencia en arquitectura, urbanismo y construcción en África. Desarrolla proyectos para gobiernos, instituciones públicas y fondos internacionales.'
+            'LABANDA Industrie Services es una firma de arquitectura, urbanismo e infraestructuras fundada en 2017 en Guinea Ecuatorial. Está integrada por un equipo de profesionales con más de 30 años de experiencia acumulada en proyectos internacionales de desarrollo en África.'
     },
     {
         question: '¿En qué países opera LABANDA?',
         answer:
-            'LABANDA tiene sede en Malabo (Guinea Ecuatorial) y presencia activa en Camerún, Congo y Chad, liderando proyectos de desarrollo urbano e infraestructura.'
+            'LABANDA tiene su sede en Malabo (Guinea Ecuatorial) y presencia activa en Camerún, Santo Tomé y Príncipe, Angola y Senegal, con oficinas técnicas en Malabo, España y Dakar.'
     },
     {
         question: '¿Qué tipo de proyectos realiza?',

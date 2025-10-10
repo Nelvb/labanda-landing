@@ -27,9 +27,9 @@ const services = [
       es: 'Arquitectura y Urbanismo',
     },
     description: {
-      fr: 'Conception architecturale et planification urbaine stratégique pour le développement harmonieux des villes et territoires en Afrique Centrale.',
-      en: 'Architectural design and strategic urban planning for the harmonious development of cities and territories in Central Africa.',
-      es: 'Diseño arquitectónico y planificación urbana estratégica para el desarrollo armonioso de ciudades y territorios en África Central.',
+      fr: 'Conception architecturale et planification urbaine stratégique pour le développement harmonieux des villes et territoires en Afrique.',
+      en: 'Architectural design and strategic urban planning for the harmonious development of cities and territories in Africa.',
+      es: 'Diseño arquitectónico y planificación urbana estratégica para el desarrollo armonioso de ciudades y territorios en África.',
     },
     capabilities: {
       fr: [

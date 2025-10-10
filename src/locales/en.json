@@ -9,7 +9,7 @@
     },
     "hero": {
         "title": "Excellence in Architecture & Infrastructure",
-        "subtitle": "Team with over 30 years of expertise serving strategic infrastructure development in Central Africa",
+        "subtitle": "A team of professionals with over 30 years of experience in architecture, urban planning and infrastructure serving Africa’s development.",
         "cta_primary": "Discover our projects",
         "cta_secondary": "Contact us"
     },
@@ -22,11 +22,11 @@
         "title": "About LABANDA",
         "intro": "LABANDA Industrie Services supports governments, institutions and financing organizations in the implementation of major projects: cathedrals, urban planning, universities and sustainable infrastructure.",
         "history_title": "Our History",
-        "history_text": "Founded with the vision of contributing to the sustainable development of Central Africa, LABANDA Industrie Services has established itself as a trusted partner for governmental and institutional projects.",
+        "history_text": "Founded with the vision of contributing to the sustainable development of Africa, LABANDA Industrie Services has established itself as a trusted partner for governmental and institutional projects.",
         "mission_title": "Our Mission",
-        "mission_text": "Design and build sustainable infrastructure that transforms communities and supports economic growth in Central African nations through architectural excellence and innovation.",
+        "mission_text": "Design and build sustainable infrastructure that transforms communities and supports economic growth in African nations through architectural excellence and innovation.",
         "vision_title": "Our Vision",
-        "vision_text": "To be the leading provider of architecture and strategic infrastructure in Central Africa, recognized for our technical excellence and commitment to sustainable development.",
+        "vision_text": "To be the leading provider of architecture and strategic infrastructure in Africa, recognized for our technical excellence and commitment to sustainable development.",
         "presence_title": "Regional Presence",
         "countries": {
             "guinea": "Equatorial Guinea",
@@ -38,11 +38,11 @@
     },
     "services": {
         "title": "Our Services",
-        "subtitle": "Complete solutions for your infrastructure projects in Central Africa"
+        "subtitle": "Complete solutions for your infrastructure projects in Africa"
     },
     "projects": {
         "title": "Our Projects",
-        "subtitle": "Portfolio of emblematic achievements in Central Africa and internationally"
+        "subtitle": "Portfolio of emblematic achievements in Africa and internationally"
     },
     "contact": {
         "title": "Contact Us",
@@ -79,9 +79,9 @@
         },
         "info": {
             "address_title": "Location",
-            "address": "Malabo, Equatorial Guinea\\nCentral Africa",
+            "address": "Malabo, Equatorial Guinea\\nAfrica",
             "phone_title": "Phone",
-            "phone": "+240 222 94 95 84",
+            "phone": "+240 551 241 667",
             "email_title": "Email",
             "email": "info{'@'}labandaguinea.com",
             "hours_title": "Hours",
@@ -90,7 +90,7 @@
         "privacy_notice": "By submitting this form, you accept our"
     },
     "footer": {
-        "description": "Expertise in architecture, construction and urban planning in Central Africa. Commitment, excellence and sustainability.",
+        "description": "Expertise in architecture, construction and urban planning in Africa. Commitment, excellence and sustainability.",
         "legal_title": "Legal",
         "legal_notice": "Legal Notice",
         "privacy_policy": "Privacy Policy",

@@ -76,15 +76,16 @@ const { t, locale } = useI18n()
             <MapPin class="w-5 h-5 text-[#FF6B35] flex-shrink-0 mt-0.5" />
             <span>Malabo, Guinée Équatoriale</span>
           </li>
-          <li class="flex items-start gap-3">
-            <Phone class="w-5 h-5 text-[#FF6B35] flex-shrink-0 mt-0.5" />
-            <a
-              href="tel:+240222949584"
-              class="hover:text-[#FF6B35] transition-colors"
-            >
-              +240 222 94 95 84
-            </a>
-          </li>
+         <li class="flex items-start gap-3">
+  <Phone class="w-5 h-5 text-[#FF6B35] flex-shrink-0 mt-0.5" />
+  <a
+    :href="`tel:${t('contact.info.phone').replace(/\\s+/g, '')}`"
+    class="hover:text-[#FF6B35] transition-colors"
+  >
+    {{ t('contact.info.phone') }}
+  </a>
+</li>
+
           <li class="flex items-start gap-3">
             <Mail class="w-5 h-5 text-[#FF6B35] flex-shrink-0 mt-0.5" />
             <a

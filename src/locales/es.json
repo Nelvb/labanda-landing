@@ -9,7 +9,7 @@
     },
     "hero": {
         "title": "Excelencia en Arquitectura e Infraestructura",
-        "subtitle": "Equipo con más de 30 años de experiencia al servicio del desarrollo estratégico de África Central",
+        "subtitle": "Equipo de profesionales con más de 30 años de experiencia en arquitectura, urbanismo e infraestructuras al servicio del desarrollo de África.",
         "cta_primary": "Descubrir nuestros proyectos",
         "cta_secondary": "Contactar"
     },
@@ -22,11 +22,11 @@
         "title": "Sobre LABANDA",
         "intro": "LABANDA Industrie Services nace en 2017 en Guinea Ecuatorial, fruto del trabajo y la colaboración de un equipo de profesionales con más de 30 años de experiencia internacional en arquitectura, urbanismo e infraestructuras. Comprometida con el desarrollo urbano sostenible, el respeto a la cultura local y una metodología personalizada en cada proyecto, LABANDA se distingue por ser una empresa ágil y dinámica, capaz de ofrecer soluciones únicas donde el cliente forma parte activa del equipo.",
         "history_title": "Nuestra Historia",
-        "history_text": "Fundada con la visión de contribuir al desarrollo sostenible de África Central, LABANDA Industrie Services se ha consolidado como un socio de confianza para proyectos institucionales.",
+        "history_text": "Fundada con la visión de contribuir al desarrollo sostenible de África, LABANDA Industrie Services se ha consolidado como un socio de confianza para proyectos institucionales.",
         "mission_title": "Nuestra Misión",
-        "mission_text": "Diseñar y construir infraestructuras sostenibles que transformen comunidades y fomenten el crecimiento económico en África Central.",
+        "mission_text": "Diseñar y construir infraestructuras sostenibles que transformen comunidades y fomenten el crecimiento económico en África.",
         "vision_title": "Nuestra Visión",
-        "vision_text": "Ser líderes en arquitectura e infraestructuras estratégicas en África Central, reconocidos por nuestra excelencia técnica y compromiso con la sostenibilidad.",
+        "vision_text": "Ser líderes en arquitectura e infraestructuras estratégicas en África, reconocidos por nuestra excelencia técnica y compromiso con la sostenibilidad.",
         "presence_title": "Presencia Regional",
         "countries": {
             "guinea": "Guinea Ecuatorial",
@@ -38,11 +38,11 @@
     },
     "services": {
         "title": "Nuestros Servicios",
-        "subtitle": "Soluciones completas para proyectos de infraestructura en África Central"
+        "subtitle": "Soluciones completas para proyectos de infraestructura en África"
     },
     "projects": {
         "title": "Nuestros Proyectos",
-        "subtitle": "Portafolio de obras emblemáticas en África Central e internacionalmente"
+        "subtitle": "Portafolio de obras emblemáticas en África e internacionalmente"
     },
     "contact": {
         "title": "Contáctanos",
@@ -79,9 +79,9 @@
         },
         "info": {
             "address_title": "Dirección",
-            "address": "Malabo, Guinea Ecuatorial\\nÁfrica Central",
+            "address": "Malabo, Guinea Ecuatorial\\nÁfrica",
             "phone_title": "Teléfono",
-            "phone": "+240 222 94 95 84",
+            "phone": "+240 551 241 667",
             "email_title": "Correo",
             "email": "info{'@'}labandaguinea.com",
             "hours_title": "Horario",
@@ -90,7 +90,7 @@
         "privacy_notice": "Al enviar este formulario, aceptas nuestra"
     },
     "footer": {
-        "description": "Diseñamos y construimos infraestructuras sostenibles que impulsan el desarrollo de África Central.",
+        "description": "Diseñamos y construimos infraestructuras sostenibles que impulsan el desarrollo de África.",
         "legal_title": "Información Legal",
         "legal_notice": "Aviso Legal",
         "privacy_policy": "Política de Privacidad",

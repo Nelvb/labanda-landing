@@ -2,7 +2,7 @@
 
 ## Introducción
 
-Landing corporativa trilingüe (FR/EN/ES) para LABANDA Industrie Services, empresa especializada en arquitectura, urbanismo y construcción en África Central. El proyecto está diseñado para presentar servicios profesionales a gobiernos, instituciones y fondos de inversión, con un enfoque en credibilidad internacional y escalabilidad.
+Landing corporativa trilingüe (FR/EN/ES) para LABANDA Industrie Services, empresa especializada en arquitectura, urbanismo y construcción en África. El proyecto está diseñado para presentar servicios profesionales a gobiernos, instituciones y fondos de inversión, con un enfoque en credibilidad internacional y escalabilidad.
 
 ## Objetivo
 

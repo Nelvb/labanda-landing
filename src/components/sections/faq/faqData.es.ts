@@ -3,7 +3,7 @@ export default [
     {
         question: '¿Qué es LABANDA Industrie Services?',
         answer:
-            'LABANDA Industrie Services es una empresa con más de 30 años de experiencia en arquitectura, urbanismo y construcción en África Central. Desarrolla proyectos para gobiernos, instituciones públicas y fondos internacionales.'
+            'LABANDA Industrie Services es una empresa con más de 30 años de experiencia en arquitectura, urbanismo y construcción en África. Desarrolla proyectos para gobiernos, instituciones públicas y fondos internacionales.'
     },
     {
         question: '¿En qué países opera LABANDA?',

@@ -8,10 +8,10 @@
         "contact": "Contact"
     },
     "hero": {
-        "title": "Excellence en Architecture & Infrastructure",
-        "subtitle": "Équipe avec plus de 30 ans d'expertise au service du développement stratégique des infrastructures en Afrique Centrale",
+        "title": "Excellence en Architecture & Infrastructures",
+        "subtitle": "Équipe de professionnels avec plus de 30 ans d’expérience en architecture, urbanisme et infrastructures au service du développement de l’Afrique.",
         "cta_primary": "Découvrir nos projets",
-        "cta_secondary": "Contactez-nous"
+        "cta_secondary": "Nous contacter"
     },
     "stats": {
         "experience": "ANNÉES D'EXPÉRIENCE",
@@ -22,11 +22,11 @@
         "title": "À Propos de LABANDA",
         "intro": "LABANDA Industrie Services accompagne les gouvernements, institutions et organismes de financement dans la réalisation de projets d'envergure : cathédrales, plans d'urbanisme, universités et infrastructures durables.",
         "history_title": "Notre Histoire",
-        "history_text": "Fondée avec la vision de contribuer au développement durable de l'Afrique Centrale, LABANDA Industrie Services s'est imposée comme un partenaire de confiance pour les projets d'envergure gouvernementale et institutionnelle.",
+        "history_text": "Fondée avec la vision de contribuer au développement durable de l'Afrique, LABANDA Industrie Services s'est imposée comme un partenaire de confiance pour les projets d'envergure gouvernementale et institutionnelle.",
         "mission_title": "Notre Mission",
-        "mission_text": "Concevoir et réaliser des infrastructures durables qui transforment les communautés et soutiennent la croissance économique des nations d'Afrique Centrale à travers l'excellence architecturale et l'innovation.",
+        "mission_text": "Concevoir et réaliser des infrastructures durables qui transforment les communautés et soutiennent la croissance économique des nations d'Afrique à travers l'excellence architecturale et l'innovation.",
         "vision_title": "Notre Vision",
-        "vision_text": "Être le leader incontournable en architecture et infrastructures stratégiques en Afrique Centrale, reconnu pour notre excellence technique et notre engagement envers le développement durable.",
+        "vision_text": "Être le leader incontournable en architecture et infrastructures stratégiques en Afrique, reconnu pour notre excellence technique et notre engagement envers le développement durable.",
         "presence_title": "Présence Régionale",
         "countries": {
             "guinea": "Guinée Équatoriale",
@@ -38,11 +38,11 @@
     },
     "services": {
         "title": "Nos Services",
-        "subtitle": "Des solutions complètes pour vos projets d'infrastructure en Afrique Centrale"
+        "subtitle": "Des solutions complètes pour vos projets d'infrastructure en Afrique"
     },
     "projects": {
         "title": "Nos Projets",
-        "subtitle": "Portfolio de réalisations emblématiques en Afrique Centrale et international"
+        "subtitle": "Portfolio de réalisations emblématiques en Afrique et international"
     },
     "contact": {
         "title": "Contactez-nous",
@@ -79,9 +79,9 @@
         },
         "info": {
             "address_title": "Localisation",
-            "address": "Malabo, Guinée Équatoriale\\nAfrique Centrale",
+            "address": "Malabo, Guinée Équatoriale\\nAfrique",
             "phone_title": "Téléphone",
-            "phone": "+240 222 94 95 84",
+            "phone": "+240 551 241 667",
             "email_title": "Email",
             "email": "info{'@'}labandaguinea.com",
             "hours_title": "Horaires",
@@ -90,7 +90,7 @@
         "privacy_notice": "En envoyant ce formulaire, vous acceptez notre"
     },
     "footer": {
-        "description": "Expertise en architecture, construction et urbanisme en Afrique Centrale. Engagement, excellence et durabilité.",
+        "description": "Expertise en architecture, construction et urbanisme en Afrique. Engagement, excellence et durabilité.",
         "legal_title": "Mentions légales",
         "legal_notice": "Mentions légales",
         "privacy_policy": "Politique de confidentialité",

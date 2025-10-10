@@ -1,7 +1,7 @@
 # INSTRUCCIONES PERMANENTES — PROYECTO LABANDA (LANDING CORPORATIVA)
 
 ## CONTEXTO DEL PROYECTO
-- Cliente: LABANDA Industrie Services (arquitectura, urbanismo, construcción África Central)
+- Cliente: LABANDA Industrie Services (arquitectura, urbanismo, construcción África)
 - Tipo: Landing corporativa bilingüe (FR/EN) 
 - Objetivo: Presencia digital profesional para gobiernos, instituciones, fondos de inversión
 - Timeline: 7-10 días (presentación inminente)

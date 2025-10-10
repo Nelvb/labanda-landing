@@ -29,9 +29,16 @@ const stats = ref<StatItem[]>([
 
 const statsVisible = ref([false, false, false])
 
-// Función de animación progresiva
+// Función de animación progresiva con validación de tipos
 const animateCounter = (index: number) => {
   const stat = stats.value[index]
+  
+  // Guard: Validar que el elemento existe
+  if (!stat) {
+    console.warn(`Stat at index ${index} not found`)
+    return
+  }
+  
   const increment = stat.target / 50
   const interval = setInterval(() => {
     if (stat.value < stat.target) {
@@ -75,6 +82,7 @@ onMounted(() => {
       <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
         <!-- Stat 1 -->
         <div
+          v-if="stats[0]"
           class="stat-card text-center transition-all duration-1000"
           :class="statsVisible[0] ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-10 scale-90'"
           data-index="0"
@@ -107,6 +115,7 @@ onMounted(() => {
 
         <!-- Stat 2 -->
         <div
+          v-if="stats[1]"
           class="stat-card text-center transition-all duration-1000"
           :class="statsVisible[1] ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-10 scale-90'"
           data-index="1"
@@ -137,6 +146,7 @@ onMounted(() => {
 
         <!-- Stat 3 -->
         <div
+          v-if="stats[2]"
           class="stat-card text-center transition-all duration-1000"
           :class="statsVisible[2] ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-10 scale-90'"
           data-index="2"
